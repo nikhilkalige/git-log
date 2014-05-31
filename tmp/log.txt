@@ -1,0 +1,2289 @@
+commit fa9aae380a7aa46a3bd2c8c12e31cecdaf7e1343 477699c13c318b5edbee14545ea5f23a694c8745 (HEAD, tag: refs/tags/v0.5.2, refs/remotes/origin/master, refs/remotes/origin/HEAD, refs/heads/master)
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Thu May 29 21:05:15 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Thu May 29 21:05:15 2014 +0530
+
+    Prepare 0.5.2 release
+
+1   1   package.json
+
+commit 477699c13c318b5edbee14545ea5f23a694c8745 92a43847f76d173826b68773d65f05f4c4121338
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Thu May 29 21:04:35 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Thu May 29 21:04:35 2014 +0530
+
+    License update
+
+2   2   LICENSE
+
+commit 92a43847f76d173826b68773d65f05f4c4121338 5124c4e1281ea36199d58672df151e2f5ab64001 (tag: refs/tags/v0.5.1)
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Wed May 28 16:04:56 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Wed May 28 16:04:56 2014 +0530
+
+    Prepare 0.5.1 release
+
+1   1   package.json
+
+commit 5124c4e1281ea36199d58672df151e2f5ab64001 d998261debc2e6909e52f41beff10023f42860f5
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Wed May 28 16:04:20 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Wed May 28 16:04:20 2014 +0530
+
+    Updated changelog
+
+4   0   CHANGELOG.md
+
+commit d998261debc2e6909e52f41beff10023f42860f5 d41580456bba4d59bc3d53174d38b2b5205ff9b1 9a93e7f9da729e913cce1dcbc1ee98500f01c77f
+Merge: d415804 9a93e7f
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Wed May 28 16:03:02 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Wed May 28 16:03:02 2014 +0530
+
+    Merge branch 'develop'
+
+commit 9a93e7f9da729e913cce1dcbc1ee98500f01c77f d41580456bba4d59bc3d53174d38b2b5205ff9b1 (refs/remotes/origin/develop, refs/heads/develop)
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Wed May 28 15:56:05 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Wed May 28 15:56:05 2014 +0530
+
+    Scope range lastrow error fix
+
+5   5   lib/docblockr-worker.js
+
+commit d41580456bba4d59bc3d53174d38b2b5205ff9b1 c161c08ceb7be35e54f464ef43832e1781dedd7d (tag: refs/tags/v0.5.0)
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Mon May 26 15:52:50 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Mon May 26 15:52:50 2014 +0530
+
+    Prepare 0.5.0 release
+
+1   1   package.json
+
+commit c161c08ceb7be35e54f464ef43832e1781dedd7d b74821fe01be2378f691f62d6014e1d760d8f6e9
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Mon May 26 15:51:24 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Mon May 26 15:51:24 2014 +0530
+
+    Readme and changelog updated
+
+11  2   CHANGELOG.md
+10  4   README.md
+-   -   resources/multiline-decorate.gif
+
+commit b74821fe01be2378f691f62d6014e1d760d8f6e9 b0a9434f934dbff932de9d4335f556318b6a1d8f bc9604303414e0aed5d0ca4d727347bae58921cd
+Merge: b0a9434 bc96043
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Mon May 26 15:26:39 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Mon May 26 15:26:39 2014 +0530
+
+    Merge branch 'vaibhavbhat16-master' into develop
+
+commit bc9604303414e0aed5d0ca4d727347bae58921cd b0a9434f934dbff932de9d4335f556318b6a1d8f
+Author:     vaibhavn <bhatvaibhav@gmail.com>
+AuthorDate: Sat May 10 06:11:33 2014 -0400
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Mon May 26 15:23:00 2014 +0530
+
+    Multline comment decorate command
+
+75  0   lib/docblockr-worker.js
+
+commit e35b6236b947262857d89a556dd1842f77c172f4 b74bfcad81551a372ba1708b27b3bb59a70a365b (refs/remotes/origin/vaibhavbhat16-master)
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Mon May 26 15:13:04 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Mon May 26 15:13:04 2014 +0530
+
+    Multline comment decorate
+
+4   16  lib/docblockr-worker.js
+
+commit b74bfcad81551a372ba1708b27b3bb59a70a365b 37b9433ee290599e425bfce9b19359631f0f7fd9
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Mon May 26 14:58:23 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Mon May 26 14:58:23 2014 +0530
+
+    working version of multiline
+
+76  47  lib/docblockr-worker.js
+
+commit 37b9433ee290599e425bfce9b19359631f0f7fd9 b0a9434f934dbff932de9d4335f556318b6a1d8f
+Author:     vaibhavn <bhatvaibhav@gmail.com>
+AuthorDate: Sat May 10 06:11:33 2014 -0400
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Mon May 26 10:36:25 2014 +0530
+
+    init version of multiline decorator added
+
+58  0   lib/docblockr-worker.js
+
+commit b0a9434f934dbff932de9d4335f556318b6a1d8f f48754691cba1e8eb5c34f39b4f45cb002637091
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Mon May 26 10:08:59 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Mon May 26 10:08:59 2014 +0530
+
+    decorate cmd additional slash fix
+
+1   1   lib/docblockr-worker.js
+
+commit f57f9e960d2badbc8f9da3060792329391057be1 f48754691cba1e8eb5c34f39b4f45cb002637091 e481df878e587d5a04ab065df03bf6a0948f555d (refs/heads/vaibhavbhat16-master)
+Merge: f487546 e481df8
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Mon May 26 00:20:25 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Mon May 26 00:20:25 2014 +0530
+
+    Merge branch 'master' of https://github.com/vaibhavbhat16/docblockr into vaibhavbhat16-master
+
+commit e481df878e587d5a04ab065df03bf6a0948f555d e1d98cc29ac8d3a51ee7923d4784c9c202d69c6f
+Author:     vaibhavn <bhatvaibhav@gmail.com>
+AuthorDate: Sat May 10 06:11:33 2014 -0400
+Commit:     vaibhavn <bhatvaibhav@gmail.com>
+CommitDate: Sat May 10 06:11:33 2014 -0400
+
+    init version of multiline decorator added
+
+58  0   lib/docblockr-worker.js
+
+commit f48754691cba1e8eb5c34f39b4f45cb002637091 4efc1641adb50013ebd38e66160a8d00a19a748a
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Sun May 25 21:41:54 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Sun May 25 21:41:54 2014 +0530
+
+    indent command error fix
+
+2   2   lib/docblockr-worker.js
+
+commit 4efc1641adb50013ebd38e66160a8d00a19a748a 938dea23e6a4d5aed945e5c88ca381dd96dfeefb
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Sun May 25 21:40:41 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Sun May 25 21:40:41 2014 +0530
+
+    syntax error fix
+
+1   1   lib/docsparser.js
+
+commit 938dea23e6a4d5aed945e5c88ca381dd96dfeefb e1d98cc29ac8d3a51ee7923d4784c9c202d69c6f 70a39c962871b6724a6f6601f074afce872dad1b
+Merge: e1d98cc 70a39c9
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Sun May 25 21:21:58 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Sun May 25 21:21:58 2014 +0530
+
+    Merge branch 'feature/named-regex' into develop
+
+commit 70a39c962871b6724a6f6601f074afce872dad1b 50886b98db6661936aa4ad25af6993030ec5efa9
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Sun May 25 21:21:17 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Sun May 25 21:21:17 2014 +0530
+
+    rust, typescript name regex fix
+
+16  16  lib/docsparser.js
+
+commit 50886b98db6661936aa4ad25af6993030ec5efa9 f13599716a6c7fa4811e6217bc8f8e69e6c881e2
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Sun May 25 21:11:41 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Sun May 25 21:11:41 2014 +0530
+
+    java name regex fix
+
+10  10  lib/docsparser.js
+
+commit f13599716a6c7fa4811e6217bc8f8e69e6c881e2 b158368c1191e2fb7b41e4b4ca46090ff1fedc5d
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Sun May 25 21:08:38 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Sun May 25 21:08:38 2014 +0530
+
+    objc name regex fix
+
+8   8   lib/docsparser.js
+
+commit b158368c1191e2fb7b41e4b4ca46090ff1fedc5d 57d1366a9750a5820a439164bd653e49c9bb8dfd
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Sun May 25 21:05:38 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Sun May 25 21:05:38 2014 +0530
+
+    actionscript name regex fix
+
+9   9   lib/docsparser.js
+
+commit 57d1366a9750a5820a439164bd653e49c9bb8dfd 50b4f74dbb8bf7d20474d14e4207c3b32905499f
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Sun May 25 21:01:49 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Sun May 25 21:01:49 2014 +0530
+
+    coffeescript name regex fix
+
+10  10  lib/docsparser.js
+
+commit 50b4f74dbb8bf7d20474d14e4207c3b32905499f bedb28510896661cca30ae09a63843a87339a91a
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Sun May 25 20:56:37 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Sun May 25 20:56:37 2014 +0530
+
+    php name regex fix
+
+17  17  lib/docsparser.js
+
+commit bedb28510896661cca30ae09a63843a87339a91a 02e810522bf1f063e335e96cec23165dd88ae5be
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Sun May 25 20:45:37 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Sun May 25 20:45:37 2014 +0530
+
+    cpp name regex fix
+
+6   6   lib/docsparser.js
+
+commit 02e810522bf1f063e335e96cec23165dd88ae5be 7a3f6004662d49da46e91e020229537e74409dde
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Sat May 24 22:48:48 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Sat May 24 22:48:48 2014 +0530
+
+    javascript name regex fix
+
+11  11  lib/docsparser.js
+
+commit 7a3f6004662d49da46e91e020229537e74409dde ee3f3bba399ba9b01d3b6a142546092081f50efa
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Sat May 24 22:23:24 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Sat May 24 22:23:24 2014 +0530
+
+    xregexp lib added
+
+1   0   lib/docsparser.js
+1176    0   lib/xregexp.js
+
+commit ee3f3bba399ba9b01d3b6a142546092081f50efa e1d98cc29ac8d3a51ee7923d4784c9c202d69c6f
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Thu May 22 23:54:36 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Thu May 22 23:54:36 2014 +0530
+
+    test version
+
+209 0   lib/named-regex.js
+61  0   lib/test.js
+
+commit e1d98cc29ac8d3a51ee7923d4784c9c202d69c6f 54372854840583b127f89de3f89ce53f4419de81 (tag: refs/tags/v0.4.2)
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Fri May 9 19:18:01 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Fri May 9 19:18:01 2014 +0530
+
+    Prepare 0.4.2 release
+
+1   1   package.json
+
+commit 54372854840583b127f89de3f89ce53f4419de81 a76a2a81a776cf93a7c948d4b7aa2cbcb021601f 6d284afc947da2a9282279e926b1ddf939350d57
+Merge: a76a2a8 6d284af
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Fri May 9 19:16:15 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Fri May 9 19:16:15 2014 +0530
+
+    Merge branch 'feature/scope_checks' into develop
+
+commit 6d284afc947da2a9282279e926b1ddf939350d57 337218e05c1f75806da96b569c1a1be290ba53da
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Fri May 9 19:12:39 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Fri May 9 19:12:39 2014 +0530
+
+    Function super calls fixed
+    Regex exec calls on string fixed
+
+41  41  lib/docsparser.js
+
+commit 337218e05c1f75806da96b569c1a1be290ba53da 01f0e2194949dfe8b6895ca7667138f6c65a6cde
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Fri May 9 17:37:43 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Fri May 9 17:37:43 2014 +0530
+
+    Scope checks added various commands
+
+11  13  lib/docblockr-worker.js
+
+commit 01f0e2194949dfe8b6895ca7667138f6c65a6cde 05182fdacb79de99d50fb44fd7f32edb61a80a08
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Fri May 9 17:23:09 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Fri May 9 17:23:09 2014 +0530
+
+    Fix if statements in validate_request
+
+6   3   lib/docblockr-worker.js
+
+commit 05182fdacb79de99d50fb44fd7f32edb61a80a08 0c74e83801ae89323e5b3b6078e4059840966881
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Fri May 9 16:55:10 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Fri May 9 16:55:10 2014 +0530
+
+    shift+Enter now puts a newline
+
+5   2   lib/docblockr-worker.js
+
+commit 0c74e83801ae89323e5b3b6078e4059840966881 dcec5392d345a9c3a7c1111c41e6e9007819f112
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Fri May 9 15:30:21 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Fri May 9 15:30:21 2014 +0530
+
+    Update validate_request function usage
+
+10  10  lib/docblockr-worker.js
+
+commit dcec5392d345a9c3a7c1111c41e6e9007819f112 a76a2a81a776cf93a7c948d4b7aa2cbcb021601f
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Fri May 9 13:55:06 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Fri May 9 13:55:06 2014 +0530
+
+    Update validate_request to search for scope
+    Change parameters in to object type
+
+60  28  lib/docblockr-worker.js
+
+commit a76a2a81a776cf93a7c948d4b7aa2cbcb021601f 723b7b682a7272e52616a0ef58911aa155f61214 (tag: refs/tags/v0.4.1)
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 19:33:21 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 19:33:21 2014 +0530
+
+    Prepare 0.4.1 release
+
+1   1   package.json
+
+commit 723b7b682a7272e52616a0ef58911aa155f61214 fc1d89ad130bee9f4c6d41633a89990aeb01e8c6
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 19:33:07 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 19:33:07 2014 +0530
+
+    Changelog update
+    Readme fix
+
+12  0   CHANGELOG.md
+7   0   README.md
+
+commit fc1d89ad130bee9f4c6d41633a89990aeb01e8c6 5176a76b91a0acf4de6a9cafb5b909105854e0de (tag: refs/tags/v0.4.0)
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 19:22:46 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 19:22:46 2014 +0530
+
+    Prepare 0.4.0 release
+
+1   1   package.json
+
+commit 5176a76b91a0acf4de6a9cafb5b909105854e0de af0b994e3a464347f3c16df02d7cbe642e08d5dd
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 19:22:15 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 19:22:15 2014 +0530
+
+    Remove log statements
+
+14  14  lib/docblockr-worker.js
+
+commit af0b994e3a464347f3c16df02d7cbe642e08d5dd 4b0b26eada8cf1a95249b3e02c4560904119c5fb
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 19:18:20 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 19:18:20 2014 +0530
+
+    Updated read me and necessary resources
+
+163 6   README.md
+-   -   resources/auto-indent-2.gif
+-   -   resources/auto-indent.gif
+-   -   resources/basic-block.gif
+-   -   resources/deep-indent.gif
+-   -   resources/single-line.gif
+-   -   resources/type-hinting.gif
+
+commit 4b0b26eada8cf1a95249b3e02c4560904119c5fb e24da66482fa568edca38a802b4f9af7ca6c1112
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 19:17:41 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 19:17:41 2014 +0530
+
+    Handler to update settings on change
+
+10  1   lib/docblockr-worker.js
+2   2   lib/docsparser.js
+
+commit e24da66482fa568edca38a802b4f9af7ca6c1112 8c38689b9ace678d371e94fcf7fca2add80749a9
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 19:16:24 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 19:16:24 2014 +0530
+
+    keymaps error fix
+
+1   1   keymaps/docblockr.json
+1   1   package.json
+
+commit 8c38689b9ace678d371e94fcf7fca2add80749a9 f53346f0c0a7bf05c15a20b2aef75599baef8ee6
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 17:57:30 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 17:57:30 2014 +0530
+
+    Unnecessary keybindings removed
+
+0   4   keymaps/docblockr.json
+
+commit f53346f0c0a7bf05c15a20b2aef75599baef8ee6 5e05b1641610dcd127d872d207c48a82be405c11
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 17:57:03 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 17:57:03 2014 +0530
+
+    Moved docblockr to js from coffee
+
+0   36  lib/docblockr.coffee
+32  0   lib/docblockr.js
+
+commit 5e05b1641610dcd127d872d207c48a82be405c11 e65f2ff10a1bf60a2a55b77f9b95db982771d4a1 44b92e48a4d4d7fd718756fc4266685489aab96a
+Merge: e65f2ff 44b92e4
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 17:43:44 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 17:43:44 2014 +0530
+
+    Merge branch 'feature/additional_features' into develop
+
+commit 44b92e48a4d4d7fd718756fc4266685489aab96a ae89ef2856ede649350d4c0ded44a1d360600764
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 17:41:23 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 17:41:23 2014 +0530
+
+    insert snippet related functionalities
+
+33  4   lib/docblockr-worker.js
+
+commit ae89ef2856ede649350d4c0ded44a1d360600764 819f64428ebfcabc7223e0d829cebb3feec832da
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 16:20:57 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 16:20:57 2014 +0530
+
+    Decorate command added
+
+2   1   keymaps/docblockr.json
+44  35  lib/docblockr-worker.js
+
+commit 819f64428ebfcabc7223e0d829cebb3feec832da 9ba9c9c159e8f7cb985c7a5ca5f83cda9ea8324e
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 14:15:21 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 14:15:21 2014 +0530
+
+    Wrap lines command added
+
+2   1   keymaps/docblockr.json
+161 3   lib/docblockr-worker.js
+
+commit 9ba9c9c159e8f7cb985c7a5ca5f83cda9ea8324e 70392cad996e230102b5622ba330c90510390862
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 01:47:18 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 01:47:18 2014 +0530
+
+    Reparse command added
+
+2   1   keymaps/docblockr.json
+69  0   lib/docblockr-worker.js
+
+commit 70392cad996e230102b5622ba330c90510390862 7838afd7345bfc58114c08eff8dd9bec4a730c3e
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 01:01:33 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 01:01:33 2014 +0530
+
+    comment scope find function added
+
+41  0   lib/docblockr-worker.js
+
+commit 7838afd7345bfc58114c08eff8dd9bec4a730c3e fc03728beec53833c1547fc9cd72bb9327f0870b
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Wed Apr 30 21:25:01 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Wed Apr 30 21:25:01 2014 +0530
+
+    Deindent command added
+
+42  10  lib/docblockr-worker.js
+
+commit fc03728beec53833c1547fc9cd72bb9327f0870b d741b6255ef8269930042bbb91ff7a1df9d0a45c
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Wed Apr 30 16:13:01 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Wed Apr 30 16:13:01 2014 +0530
+
+    join command added
+
+4   3   keymaps/docblockr.json
+43  3   lib/docblockr-worker.js
+
+commit d741b6255ef8269930042bbb91ff7a1df9d0a45c 6ba08b5c4c82cba7b695e615a955190cc59b24f8
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 29 23:19:50 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 29 23:19:50 2014 +0530
+
+    auto indent ability added
+
+52  0   lib/docblockr-worker.js
+
+commit 6ba08b5c4c82cba7b695e615a955190cc59b24f8 783b702f7a56cd0565a679dafef425974d60a5b3
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 29 23:19:14 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 29 23:19:14 2014 +0530
+
+    Enter and tab key event handlers separated
+
+2   2   keymaps/docblockr.json
+23  2   lib/docblockr-worker.js
+1   1   lib/docsparser.js
+
+commit 783b702f7a56cd0565a679dafef425974d60a5b3 5b1db8c1274051df2dce8200ac336ce2149aba4a
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 29 19:33:38 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 29 19:33:38 2014 +0530
+
+    Added support for Typescript lang
+
+107 0   lib/docsparser.js
+
+commit 5b1db8c1274051df2dce8200ac336ce2149aba4a 7be9ebab8c88cecb3af190ba7527957868438704
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 29 17:52:39 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 29 17:52:39 2014 +0530
+
+    validate_request remodelled to support pre and trail text validation
+    parse command changed to handle multiple actions
+
+47  9   lib/docblockr-worker.js
+
+commit 7be9ebab8c88cecb3af190ba7527957868438704 e65f2ff10a1bf60a2a55b77f9b95db982771d4a1
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 29 17:51:02 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 29 17:51:02 2014 +0530
+
+    Trim whitespace command supported
+
+19  0   lib/docblockr-worker.js
+
+commit e65f2ff10a1bf60a2a55b77f9b95db982771d4a1 1c867cda1156c016f0b6ce4a2379a7736cdf70d7 10805d88a8db14efda7bc8aaef20546c1876c40f
+Merge: 1c867cd 10805d8
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 29 15:35:18 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 29 15:35:18 2014 +0530
+
+    Merge branch 'feature/multiple-cursors' into develop
+
+commit 10805d88a8db14efda7bc8aaef20546c1876c40f 8a45da84138c69cd6d0a553a4ef35c41cc19859f
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 29 14:38:36 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 29 14:38:36 2014 +0530
+
+    Fixes inline comment snippet
+
+1   1   lib/docblockr-worker.js
+
+commit 8a45da84138c69cd6d0a553a4ef35c41cc19859f 30760599ad99b7411ba527f42ad76fefd5a9b519
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 29 14:25:44 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 29 14:25:44 2014 +0530
+
+    handles multiple cursors
+
+30  16  lib/docblockr-worker.js
+10  6   lib/docsparser.js
+
+commit 30760599ad99b7411ba527f42ad76fefd5a9b519 3656bfb6a49bcd22d01c4022042d1c5f84ab9118
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 29 12:54:24 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 29 12:54:24 2014 +0530
+
+    Added changelog file
+    Updated read me
+
+7   0   CHANGELOG.md
+2   0   README.md
+
+commit 3656bfb6a49bcd22d01c4022042d1c5f84ab9118 fefb0ac74a011082c8847aef1d208c3d0f2be2dc
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 29 04:42:02 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 29 04:42:02 2014 +0530
+
+    Add support for Java
+
+153 0   lib/docsparser.js
+
+commit fefb0ac74a011082c8847aef1d208c3d0f2be2dc 4b3c969c06eac4d531f49dc2fb4e16bf8a823d45
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 29 03:59:02 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 29 03:59:02 2014 +0530
+
+    Add support for ObjC Language
+
+119 1   lib/docsparser.js
+
+commit 4b3c969c06eac4d531f49dc2fb4e16bf8a823d45 b52abe1b8a537f155980645e01f884292fe2553d
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 29 03:16:30 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 29 03:16:30 2014 +0530
+
+    Add support for Actionscript language
+
+60  0   lib/docsparser.js
+
+commit b52abe1b8a537f155980645e01f884292fe2553d c5aae9194c0a83db9ec680f5b575a5741e0d119f
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Mon Apr 28 21:58:51 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Mon Apr 28 21:58:51 2014 +0530
+
+    Add support for Coffeescript
+
+84  0   lib/docsparser.js
+
+commit c5aae9194c0a83db9ec680f5b575a5741e0d119f 3963fbb511e8ef218ae5fa01abf624d1b5c966df
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Mon Apr 28 21:42:35 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Mon Apr 28 21:42:35 2014 +0530
+
+    Add support for Php Language
+
+160 12  lib/docsparser.js
+
+commit 3963fbb511e8ef218ae5fa01abf624d1b5c966df e549b6538ea2cb830bfa3d2fae570b1cc1fb7111
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Mon Apr 28 20:23:30 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Mon Apr 28 20:23:30 2014 +0530
+
+    Support for Rust Language
+
+34  0   lib/docsparser.js
+
+commit e549b6538ea2cb830bfa3d2fae570b1cc1fb7111 14f6b7a5b18a4c3b0ca1bbb98c66a60c76f2c4df
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Mon Apr 28 20:13:38 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Mon Apr 28 20:13:38 2014 +0530
+
+    parse_function returns array instead of dict
+    format_function accepts *args
+
+3   11  lib/docsparser.js
+
+commit 14f6b7a5b18a4c3b0ca1bbb98c66a60c76f2c4df 7d563d5eec9cb48175abbfbd3ff1ecf147bfb9de
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Mon Apr 28 16:10:59 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Mon Apr 28 16:10:59 2014 +0530
+
+    Added support for C, C++ and Cuda-C++ languages
+
+74  0   lib/docsparser.js
+
+commit 7d563d5eec9cb48175abbfbd3ff1ecf147bfb9de 1c867cda1156c016f0b6ce4a2379a7736cdf70d7
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Mon Apr 28 00:14:21 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Mon Apr 28 00:14:21 2014 +0530
+
+    Regex check for multiple cursors
+
+13  5   lib/docblockr-worker.js
+
+commit 1c867cda1156c016f0b6ce4a2379a7736cdf70d7 87652a6f753504dc5408600712e0f3ec8ce417b5 (tag: refs/tags/v0.3.0)
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sun Apr 27 22:17:45 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sun Apr 27 22:17:45 2014 +0530
+
+    Prepare 0.3.0 release
+
+1   1   package.json
+
+commit 87652a6f753504dc5408600712e0f3ec8ce417b5 702eb4b535202994a2c252aa0b7bfe1e95c5abbb
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sun Apr 27 22:11:51 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sun Apr 27 22:11:51 2014 +0530
+
+    Move editor dependent lines out of docsparser
+
+8   1   lib/docblockr-worker.js
+1   9   lib/docsparser.js
+
+commit 702eb4b535202994a2c252aa0b7bfe1e95c5abbb 3d4589f330829a645d8a34a82dacf96dc9f2f394 6eeb0b7d64a6d6d622a521b59a273142d7b2f517
+Merge: 3d4589f 6eeb0b7
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 04:27:55 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 04:27:55 2014 +0530
+
+    Merge branch 'master' into develop
+
+commit 6eeb0b7d64a6d6d622a521b59a273142d7b2f517 ae82e839994355edc55c48e2029a266105292d2f (tag: refs/tags/v0.2.1)
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 04:18:46 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 04:18:46 2014 +0530
+
+    Prepare 0.2.1 release
+
+1   1   package.json
+
+commit ae82e839994355edc55c48e2029a266105292d2f b3b208fa200a01da7cff26c918ba6b3a81f96269 94a579220693738b29fe6b68508cdadd76c53d32
+Merge: b3b208f 94a5792
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 04:15:40 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 04:15:40 2014 +0530
+
+    Merge branch 'release/v0.2.1'
+
+commit 3d4589f330829a645d8a34a82dacf96dc9f2f394 d91b29be6de43db45251515ccb8d0d652093e159 94a579220693738b29fe6b68508cdadd76c53d32
+Merge: d91b29b 94a5792
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 04:15:40 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 04:15:40 2014 +0530
+
+    Merge branch 'release/v0.2.1' into develop
+
+commit 94a579220693738b29fe6b68508cdadd76c53d32 d91b29be6de43db45251515ccb8d0d652093e159
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 04:15:22 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 04:15:22 2014 +0530
+
+    repo link fix
+
+1   1   package.json
+
+commit d91b29be6de43db45251515ccb8d0d652093e159 cf3ae95a2527a73574f8066bddf2e0c0793c1c77 (tag: refs/tags/v0.2.0)
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 04:10:55 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 04:10:55 2014 +0530
+
+    Prepare 0.2.0 release
+
+1   1   package.json
+
+commit cf3ae95a2527a73574f8066bddf2e0c0793c1c77 b0e1a4cbbbd6377758b1c25a5c4ae685913b6cd7
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 04:10:39 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 04:10:39 2014 +0530
+
+    Prepare 0.1.0 release
+
+2   3   package.json
+
+commit 5673c878248bc302a883ddd748cd411ec037d085 b3b208fa200a01da7cff26c918ba6b3a81f96269 76f94498a255e191129d812d110ae1a3b928efc6 (tag: refs/tags/v0.1.0)
+Merge: b3b208f 76f9449
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 03:42:48 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 03:42:48 2014 +0530
+
+    Merge branch 'release/0.1.0'
+
+commit 76f94498a255e191129d812d110ae1a3b928efc6 b0e1a4cbbbd6377758b1c25a5c4ae685913b6cd7
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 03:41:41 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 03:41:41 2014 +0530
+
+    Bump up version
+
+1   1   package.json
+
+commit b0e1a4cbbbd6377758b1c25a5c4ae685913b6cd7 b3b208fa200a01da7cff26c918ba6b3a81f96269 8798faa59c029b35f911d3b970762d4dcc537258
+Merge: b3b208f 8798faa
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 03:39:24 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 03:39:24 2014 +0530
+
+    Merge branch 'feature/create-basic-start' into develop
+
+commit 8798faa59c029b35f911d3b970762d4dcc537258 033a2ea700b2e33c168322a37c83c70e8eec75a9 (refs/remotes/origin/feature/create-basic-start)
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 03:38:29 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 03:38:29 2014 +0530
+
+    Removed unused key binding
+
+0   4   keymaps/docblockr.json
+
+commit 033a2ea700b2e33c168322a37c83c70e8eec75a9 ba7cdaa2d6bcc7b4db704a45e9ac955db60fc819
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 03:35:15 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 03:35:15 2014 +0530
+
+    menu json fix
+    fix for snippets not available on activation
+
+3   2   lib/docblockr-worker.js
+4   10  lib/docblockr.coffee
+4   4   menus/docblockr.json
+
+commit ba7cdaa2d6bcc7b4db704a45e9ac955db60fc819 0cd1dc5e4f0a31eea3ad46df0619f1046e6cac11
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 01:16:19 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 01:16:19 2014 +0530
+
+    Updated read me
+
+62  2   README.md
+
+commit 0cd1dc5e4f0a31eea3ad46df0619f1046e6cac11 c050a7151a3912b50d6b73f814f1739223fc547e
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 01:12:54 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 01:12:54 2014 +0530
+
+    gifs added
+
+-   -   resources/basic.gif
+-   -   resources/function-template.gif
+-   -   resources/long-args.gif
+-   -   resources/vars.gif
+
+commit c050a7151a3912b50d6b73f814f1739223fc547e 34de5bbec053d0d9f2a5be1afe74c59688d3e7d1
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 01:12:16 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 01:12:16 2014 +0530
+
+    Update package.json
+    Created context menu
+
+0   16  menus/docblockr.cson
+8   0   menus/docblockr.json
+1   2   package.json
+
+commit 34de5bbec053d0d9f2a5be1afe74c59688d3e7d1 3d4c30cd776caa04f1eae075903d1defa40f76a2
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 01:09:54 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 01:09:54 2014 +0530
+
+    Updated gitignore
+
+2   0   .gitignore
+0   18  test.js
+
+commit 3d4c30cd776caa04f1eae075903d1defa40f76a2 88a2c403ed5bca14ab682a9959db663a3bc8c946
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 00:16:58 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 00:16:58 2014 +0530
+
+    moved index to docsparser
+    code cleanup
+
+0   498 index.js
+2   24  lib/docblockr-worker.js
+494 0   lib/docsparser.js
+
+commit 88a2c403ed5bca14ab682a9959db663a3bc8c946 aa84ee7d0928075b251c3660ceca21e21d32057d
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 00:10:17 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 00:10:17 2014 +0530
+
+    Comments inline parser
+
+2   1   keymaps/docblockr.json
+13  5   lib/docblockr-worker.js
+
+commit aa84ee7d0928075b251c3660ceca21e21d32057d e9803995cc4e327d3617a9835039d40b85b2e618
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 00:05:22 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 00:05:22 2014 +0530
+
+    renamed toggle to parse
+    check for regex and key binding abort
+
+3   3   keymaps/docblockr.json
+17  12  lib/docblockr-worker.js
+1   1   package.json
+
+commit e9803995cc4e327d3617a9835039d40b85b2e618 e86c149373e4eee87119f1d420f4f2a8dca40ed7
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Fri Apr 25 21:06:55 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Fri Apr 25 21:06:55 2014 +0530
+
+    Moved keymaps to json
+    keymaps cleaned
+    assigned proper keybindings
+
+0   14  keymaps/docblockr.cson
+10  0   keymaps/docblockr.json
+
+commit e86c149373e4eee87119f1d420f4f2a8dca40ed7 dfd7715f14bdc65c0acaac1688e600f0f4f5bfbe
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Fri Apr 25 20:08:11 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Fri Apr 25 20:08:11 2014 +0530
+
+    Fix for variable docs
+    Code cleanup
+
+21  18  index.js
+14  52  lib/docblockr-worker.js
+
+commit dfd7715f14bdc65c0acaac1688e600f0f4f5bfbe e17558176c95419d54755b193735eddba0c61d42
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Fri Apr 25 17:57:29 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Fri Apr 25 17:57:29 2014 +0530
+
+    Add snippet end support
+
+4   0   lib/docblockr-worker.js
+
+commit e17558176c95419d54755b193735eddba0c61d42 1a6c06401ad8b006fde7cb40c374dd49a94875ea
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Fri Apr 25 17:13:38 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Fri Apr 25 17:13:38 2014 +0530
+
+    Minor fixes
+    First working version
+
+27  17  index.js
+23  11  lib/docblockr-worker.js
+
+commit 1a6c06401ad8b006fde7cb40c374dd49a94875ea c0d8b83b56a747afe23609940046ed69d1c9b598
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Fri Apr 25 01:50:37 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Fri Apr 25 01:50:37 2014 +0530
+
+    All functions implemented
+    Untested
+
+171 151 index.js
+
+commit c0d8b83b56a747afe23609940046ed69d1c9b598 1123b2dd921e05031e7035502e55f836eb2e421e
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu Apr 24 23:50:39 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu Apr 24 23:50:39 2014 +0530
+
+    Moved work from temp file to index
+    Working '/**' tags
+
+1   1   lib/docblockr-worker.js
+
+commit 1123b2dd921e05031e7035502e55f836eb2e421e 34262248998b27e4a6e7c2380ad72de5807cbd3a
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu Apr 24 23:49:25 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu Apr 24 23:49:25 2014 +0530
+
+    create_snippet function
+    commented functions in index
+
+20  17  index.js
+177 43  lib/docblockr-worker.js
+
+commit 34262248998b27e4a6e7c2380ad72de5807cbd3a 0b77f780a0afd36e01a8f6d460619e98f0acc0e8
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu Apr 24 03:09:20 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu Apr 24 03:09:20 2014 +0530
+
+    write, create snippet related functions added
+
+102 6   lib/docblockr-worker.js
+
+commit 0b77f780a0afd36e01a8f6d460619e98f0acc0e8 4cbc93b1254f22389148c79c7e1da6cccdc4738f
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Wed Apr 23 00:29:49 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Wed Apr 23 00:29:49 2014 +0530
+
+    Docsparser get_defnition function fixed
+    Moved docblockr-view.coffee to docblockr-worker.js
+    Using javascript instead of coffee-script
+
+112 84  index.js
+3   3   keymaps/docblockr.cson
+0   24  lib/docblockr-view.coffee
+131 0   lib/docblockr-worker.js
+36  10  lib/docblockr.coffee
+
+commit 4cbc93b1254f22389148c79c7e1da6cccdc4738f fe7d32c917a147d31b29d6a55621f04e5b30ff67
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Mon Apr 14 18:56:40 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Mon Apr 14 18:56:40 2014 +0530
+
+    Add expand to docblockr keymap
+
+3   0   keymaps/docblockr.cson
+
+commit fe7d32c917a147d31b29d6a55621f04e5b30ff67 6e59522f74b822d3050ad5b82e59feb827caea06
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Mon Apr 14 18:32:56 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Mon Apr 14 18:32:56 2014 +0530
+
+    Basic Plugin Structure
+
+11  0   keymaps/docblockr.cson
+24  0   lib/docblockr-view.coffee
+16  0   lib/docblockr.coffee
+16  0   menus/docblockr.cson
+14  0   package.json
+29  0   spec/docblockr-spec.coffee
+6   0   spec/docblockr-view-spec.coffee
+8   0   stylesheets/docblockr.less
+
+commit 6e59522f74b822d3050ad5b82e59feb827caea06 5a0a45acf267844b81efe379fdf8e564236ccfb9
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Wed Apr 9 17:18:22 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Wed Apr 9 17:18:22 2014 +0530
+
+    Base class function almost done
+
+325 7   index.js
+2   0   test.js
+
+commit 5a0a45acf267844b81efe379fdf8e564236ccfb9 9919b2cf213616fee6c302216a6199e126ef15ad
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Wed Apr 9 02:18:14 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Wed Apr 9 02:18:14 2014 +0530
+
+    parse_var and get-type functions added
+    Test cases for above functions
+
+65  59  index.js
+16  0   test.js
+
+commit 9919b2cf213616fee6c302216a6199e126ef15ad b3b208fa200a01da7cff26c918ba6b3a81f96269
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 8 17:57:05 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 8 17:57:05 2014 +0530
+
+    Created Parse function
+
+110 0   index.js
+0   0   test.js
+
+commit b3b208fa200a01da7cff26c918ba6b3a81f96269
+Author:     NikhilKalige <NikhilKalige@users.noreply.github.com>
+AuthorDate: Tue Apr 8 02:05:20 2014 -0700
+Commit:     NikhilKalige <NikhilKalige@users.noreply.github.com>
+CommitDate: Tue Apr 8 02:05:20 2014 -0700
+
+    Initial commit
+
+25  0   .gitignore
+21  0   LICENSE
+2   0   README.md
+
+2014-05-30T18:19:47.037Z - info: GET /api/log?path=%2Fhome%2Flonewolf%2F.atom%2Fpackages%2Fdocblockr&limit=150&socketId=0
+commit fa9aae380a7aa46a3bd2c8c12e31cecdaf7e1343 477699c13c318b5edbee14545ea5f23a694c8745 (HEAD, tag: refs/tags/v0.5.2, refs/remotes/origin/master, refs/remotes/origin/HEAD, refs/heads/master)
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Thu May 29 21:05:15 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Thu May 29 21:05:15 2014 +0530
+
+    Prepare 0.5.2 release
+
+1   1   package.json
+
+commit 477699c13c318b5edbee14545ea5f23a694c8745 92a43847f76d173826b68773d65f05f4c4121338
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Thu May 29 21:04:35 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Thu May 29 21:04:35 2014 +0530
+
+    License update
+
+2   2   LICENSE
+
+commit 92a43847f76d173826b68773d65f05f4c4121338 5124c4e1281ea36199d58672df151e2f5ab64001 (tag: refs/tags/v0.5.1)
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Wed May 28 16:04:56 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Wed May 28 16:04:56 2014 +0530
+
+    Prepare 0.5.1 release
+
+1   1   package.json
+
+commit 5124c4e1281ea36199d58672df151e2f5ab64001 d998261debc2e6909e52f41beff10023f42860f5
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Wed May 28 16:04:20 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Wed May 28 16:04:20 2014 +0530
+
+    Updated changelog
+
+4   0   CHANGELOG.md
+
+commit d998261debc2e6909e52f41beff10023f42860f5 d41580456bba4d59bc3d53174d38b2b5205ff9b1 9a93e7f9da729e913cce1dcbc1ee98500f01c77f
+Merge: d415804 9a93e7f
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Wed May 28 16:03:02 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Wed May 28 16:03:02 2014 +0530
+
+    Merge branch 'develop'
+
+commit 9a93e7f9da729e913cce1dcbc1ee98500f01c77f d41580456bba4d59bc3d53174d38b2b5205ff9b1 (refs/remotes/origin/develop, refs/heads/develop)
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Wed May 28 15:56:05 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Wed May 28 15:56:05 2014 +0530
+
+    Scope range lastrow error fix
+
+5   5   lib/docblockr-worker.js
+
+commit d41580456bba4d59bc3d53174d38b2b5205ff9b1 c161c08ceb7be35e54f464ef43832e1781dedd7d (tag: refs/tags/v0.5.0)
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Mon May 26 15:52:50 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Mon May 26 15:52:50 2014 +0530
+
+    Prepare 0.5.0 release
+
+1   1   package.json
+
+commit c161c08ceb7be35e54f464ef43832e1781dedd7d b74821fe01be2378f691f62d6014e1d760d8f6e9
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Mon May 26 15:51:24 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Mon May 26 15:51:24 2014 +0530
+
+    Readme and changelog updated
+
+11  2   CHANGELOG.md
+10  4   README.md
+-   -   resources/multiline-decorate.gif
+
+commit b74821fe01be2378f691f62d6014e1d760d8f6e9 b0a9434f934dbff932de9d4335f556318b6a1d8f bc9604303414e0aed5d0ca4d727347bae58921cd
+Merge: b0a9434 bc96043
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Mon May 26 15:26:39 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Mon May 26 15:26:39 2014 +0530
+
+    Merge branch 'vaibhavbhat16-master' into develop
+
+commit bc9604303414e0aed5d0ca4d727347bae58921cd b0a9434f934dbff932de9d4335f556318b6a1d8f
+Author:     vaibhavn <bhatvaibhav@gmail.com>
+AuthorDate: Sat May 10 06:11:33 2014 -0400
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Mon May 26 15:23:00 2014 +0530
+
+    Multline comment decorate command
+
+75  0   lib/docblockr-worker.js
+
+commit e35b6236b947262857d89a556dd1842f77c172f4 b74bfcad81551a372ba1708b27b3bb59a70a365b (refs/remotes/origin/vaibhavbhat16-master)
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Mon May 26 15:13:04 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Mon May 26 15:13:04 2014 +0530
+
+    Multline comment decorate
+
+4   16  lib/docblockr-worker.js
+
+commit b74bfcad81551a372ba1708b27b3bb59a70a365b 37b9433ee290599e425bfce9b19359631f0f7fd9
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Mon May 26 14:58:23 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Mon May 26 14:58:23 2014 +0530
+
+    working version of multiline
+
+76  47  lib/docblockr-worker.js
+
+commit 37b9433ee290599e425bfce9b19359631f0f7fd9 b0a9434f934dbff932de9d4335f556318b6a1d8f
+Author:     vaibhavn <bhatvaibhav@gmail.com>
+AuthorDate: Sat May 10 06:11:33 2014 -0400
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Mon May 26 10:36:25 2014 +0530
+
+    init version of multiline decorator added
+
+58  0   lib/docblockr-worker.js
+
+commit b0a9434f934dbff932de9d4335f556318b6a1d8f f48754691cba1e8eb5c34f39b4f45cb002637091
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Mon May 26 10:08:59 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Mon May 26 10:08:59 2014 +0530
+
+    decorate cmd additional slash fix
+
+1   1   lib/docblockr-worker.js
+
+commit f57f9e960d2badbc8f9da3060792329391057be1 f48754691cba1e8eb5c34f39b4f45cb002637091 e481df878e587d5a04ab065df03bf6a0948f555d (refs/heads/vaibhavbhat16-master)
+Merge: f487546 e481df8
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Mon May 26 00:20:25 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Mon May 26 00:20:25 2014 +0530
+
+    Merge branch 'master' of https://github.com/vaibhavbhat16/docblockr into vaibhavbhat16-master
+
+commit e481df878e587d5a04ab065df03bf6a0948f555d e1d98cc29ac8d3a51ee7923d4784c9c202d69c6f
+Author:     vaibhavn <bhatvaibhav@gmail.com>
+AuthorDate: Sat May 10 06:11:33 2014 -0400
+Commit:     vaibhavn <bhatvaibhav@gmail.com>
+CommitDate: Sat May 10 06:11:33 2014 -0400
+
+    init version of multiline decorator added
+
+58  0   lib/docblockr-worker.js
+
+commit f48754691cba1e8eb5c34f39b4f45cb002637091 4efc1641adb50013ebd38e66160a8d00a19a748a
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Sun May 25 21:41:54 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Sun May 25 21:41:54 2014 +0530
+
+    indent command error fix
+
+2   2   lib/docblockr-worker.js
+
+commit 4efc1641adb50013ebd38e66160a8d00a19a748a 938dea23e6a4d5aed945e5c88ca381dd96dfeefb
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Sun May 25 21:40:41 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Sun May 25 21:40:41 2014 +0530
+
+    syntax error fix
+
+1   1   lib/docsparser.js
+
+commit 938dea23e6a4d5aed945e5c88ca381dd96dfeefb e1d98cc29ac8d3a51ee7923d4784c9c202d69c6f 70a39c962871b6724a6f6601f074afce872dad1b
+Merge: e1d98cc 70a39c9
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Sun May 25 21:21:58 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Sun May 25 21:21:58 2014 +0530
+
+    Merge branch 'feature/named-regex' into develop
+
+commit 70a39c962871b6724a6f6601f074afce872dad1b 50886b98db6661936aa4ad25af6993030ec5efa9
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Sun May 25 21:21:17 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Sun May 25 21:21:17 2014 +0530
+
+    rust, typescript name regex fix
+
+16  16  lib/docsparser.js
+
+commit 50886b98db6661936aa4ad25af6993030ec5efa9 f13599716a6c7fa4811e6217bc8f8e69e6c881e2
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Sun May 25 21:11:41 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Sun May 25 21:11:41 2014 +0530
+
+    java name regex fix
+
+10  10  lib/docsparser.js
+
+commit f13599716a6c7fa4811e6217bc8f8e69e6c881e2 b158368c1191e2fb7b41e4b4ca46090ff1fedc5d
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Sun May 25 21:08:38 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Sun May 25 21:08:38 2014 +0530
+
+    objc name regex fix
+
+8   8   lib/docsparser.js
+
+commit b158368c1191e2fb7b41e4b4ca46090ff1fedc5d 57d1366a9750a5820a439164bd653e49c9bb8dfd
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Sun May 25 21:05:38 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Sun May 25 21:05:38 2014 +0530
+
+    actionscript name regex fix
+
+9   9   lib/docsparser.js
+
+commit 57d1366a9750a5820a439164bd653e49c9bb8dfd 50b4f74dbb8bf7d20474d14e4207c3b32905499f
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Sun May 25 21:01:49 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Sun May 25 21:01:49 2014 +0530
+
+    coffeescript name regex fix
+
+10  10  lib/docsparser.js
+
+commit 50b4f74dbb8bf7d20474d14e4207c3b32905499f bedb28510896661cca30ae09a63843a87339a91a
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Sun May 25 20:56:37 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Sun May 25 20:56:37 2014 +0530
+
+    php name regex fix
+
+17  17  lib/docsparser.js
+
+commit bedb28510896661cca30ae09a63843a87339a91a 02e810522bf1f063e335e96cec23165dd88ae5be
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Sun May 25 20:45:37 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Sun May 25 20:45:37 2014 +0530
+
+    cpp name regex fix
+
+6   6   lib/docsparser.js
+
+commit 02e810522bf1f063e335e96cec23165dd88ae5be 7a3f6004662d49da46e91e020229537e74409dde
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Sat May 24 22:48:48 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Sat May 24 22:48:48 2014 +0530
+
+    javascript name regex fix
+
+11  11  lib/docsparser.js
+
+commit 7a3f6004662d49da46e91e020229537e74409dde ee3f3bba399ba9b01d3b6a142546092081f50efa
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Sat May 24 22:23:24 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Sat May 24 22:23:24 2014 +0530
+
+    xregexp lib added
+
+1   0   lib/docsparser.js
+1176    0   lib/xregexp.js
+
+commit ee3f3bba399ba9b01d3b6a142546092081f50efa e1d98cc29ac8d3a51ee7923d4784c9c202d69c6f
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Thu May 22 23:54:36 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Thu May 22 23:54:36 2014 +0530
+
+    test version
+
+209 0   lib/named-regex.js
+61  0   lib/test.js
+
+commit e1d98cc29ac8d3a51ee7923d4784c9c202d69c6f 54372854840583b127f89de3f89ce53f4419de81 (tag: refs/tags/v0.4.2)
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Fri May 9 19:18:01 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Fri May 9 19:18:01 2014 +0530
+
+    Prepare 0.4.2 release
+
+1   1   package.json
+
+commit 54372854840583b127f89de3f89ce53f4419de81 a76a2a81a776cf93a7c948d4b7aa2cbcb021601f 6d284afc947da2a9282279e926b1ddf939350d57
+Merge: a76a2a8 6d284af
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Fri May 9 19:16:15 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Fri May 9 19:16:15 2014 +0530
+
+    Merge branch 'feature/scope_checks' into develop
+
+commit 6d284afc947da2a9282279e926b1ddf939350d57 337218e05c1f75806da96b569c1a1be290ba53da
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Fri May 9 19:12:39 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Fri May 9 19:12:39 2014 +0530
+
+    Function super calls fixed
+    Regex exec calls on string fixed
+
+41  41  lib/docsparser.js
+
+commit 337218e05c1f75806da96b569c1a1be290ba53da 01f0e2194949dfe8b6895ca7667138f6c65a6cde
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Fri May 9 17:37:43 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Fri May 9 17:37:43 2014 +0530
+
+    Scope checks added various commands
+
+11  13  lib/docblockr-worker.js
+
+commit 01f0e2194949dfe8b6895ca7667138f6c65a6cde 05182fdacb79de99d50fb44fd7f32edb61a80a08
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Fri May 9 17:23:09 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Fri May 9 17:23:09 2014 +0530
+
+    Fix if statements in validate_request
+
+6   3   lib/docblockr-worker.js
+
+commit 05182fdacb79de99d50fb44fd7f32edb61a80a08 0c74e83801ae89323e5b3b6078e4059840966881
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Fri May 9 16:55:10 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Fri May 9 16:55:10 2014 +0530
+
+    shift+Enter now puts a newline
+
+5   2   lib/docblockr-worker.js
+
+commit 0c74e83801ae89323e5b3b6078e4059840966881 dcec5392d345a9c3a7c1111c41e6e9007819f112
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Fri May 9 15:30:21 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Fri May 9 15:30:21 2014 +0530
+
+    Update validate_request function usage
+
+10  10  lib/docblockr-worker.js
+
+commit dcec5392d345a9c3a7c1111c41e6e9007819f112 a76a2a81a776cf93a7c948d4b7aa2cbcb021601f
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Fri May 9 13:55:06 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Fri May 9 13:55:06 2014 +0530
+
+    Update validate_request to search for scope
+    Change parameters in to object type
+
+60  28  lib/docblockr-worker.js
+
+commit a76a2a81a776cf93a7c948d4b7aa2cbcb021601f 723b7b682a7272e52616a0ef58911aa155f61214 (tag: refs/tags/v0.4.1)
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 19:33:21 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 19:33:21 2014 +0530
+
+    Prepare 0.4.1 release
+
+1   1   package.json
+
+commit 723b7b682a7272e52616a0ef58911aa155f61214 fc1d89ad130bee9f4c6d41633a89990aeb01e8c6
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 19:33:07 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 19:33:07 2014 +0530
+
+    Changelog update
+    Readme fix
+
+12  0   CHANGELOG.md
+7   0   README.md
+
+commit fc1d89ad130bee9f4c6d41633a89990aeb01e8c6 5176a76b91a0acf4de6a9cafb5b909105854e0de (tag: refs/tags/v0.4.0)
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 19:22:46 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 19:22:46 2014 +0530
+
+    Prepare 0.4.0 release
+
+1   1   package.json
+
+commit 5176a76b91a0acf4de6a9cafb5b909105854e0de af0b994e3a464347f3c16df02d7cbe642e08d5dd
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 19:22:15 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 19:22:15 2014 +0530
+
+    Remove log statements
+
+14  14  lib/docblockr-worker.js
+
+commit af0b994e3a464347f3c16df02d7cbe642e08d5dd 4b0b26eada8cf1a95249b3e02c4560904119c5fb
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 19:18:20 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 19:18:20 2014 +0530
+
+    Updated read me and necessary resources
+
+163 6   README.md
+-   -   resources/auto-indent-2.gif
+-   -   resources/auto-indent.gif
+-   -   resources/basic-block.gif
+-   -   resources/deep-indent.gif
+-   -   resources/single-line.gif
+-   -   resources/type-hinting.gif
+
+commit 4b0b26eada8cf1a95249b3e02c4560904119c5fb e24da66482fa568edca38a802b4f9af7ca6c1112
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 19:17:41 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 19:17:41 2014 +0530
+
+    Handler to update settings on change
+
+10  1   lib/docblockr-worker.js
+2   2   lib/docsparser.js
+
+commit e24da66482fa568edca38a802b4f9af7ca6c1112 8c38689b9ace678d371e94fcf7fca2add80749a9
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 19:16:24 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 19:16:24 2014 +0530
+
+    keymaps error fix
+
+1   1   keymaps/docblockr.json
+1   1   package.json
+
+commit 8c38689b9ace678d371e94fcf7fca2add80749a9 f53346f0c0a7bf05c15a20b2aef75599baef8ee6
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 17:57:30 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 17:57:30 2014 +0530
+
+    Unnecessary keybindings removed
+
+0   4   keymaps/docblockr.json
+
+commit f53346f0c0a7bf05c15a20b2aef75599baef8ee6 5e05b1641610dcd127d872d207c48a82be405c11
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 17:57:03 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 17:57:03 2014 +0530
+
+    Moved docblockr to js from coffee
+
+0   36  lib/docblockr.coffee
+32  0   lib/docblockr.js
+
+commit 5e05b1641610dcd127d872d207c48a82be405c11 e65f2ff10a1bf60a2a55b77f9b95db982771d4a1 44b92e48a4d4d7fd718756fc4266685489aab96a
+Merge: e65f2ff 44b92e4
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 17:43:44 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 17:43:44 2014 +0530
+
+    Merge branch 'feature/additional_features' into develop
+
+commit 44b92e48a4d4d7fd718756fc4266685489aab96a ae89ef2856ede649350d4c0ded44a1d360600764
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 17:41:23 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 17:41:23 2014 +0530
+
+    insert snippet related functionalities
+
+33  4   lib/docblockr-worker.js
+
+commit ae89ef2856ede649350d4c0ded44a1d360600764 819f64428ebfcabc7223e0d829cebb3feec832da
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 16:20:57 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 16:20:57 2014 +0530
+
+    Decorate command added
+
+2   1   keymaps/docblockr.json
+44  35  lib/docblockr-worker.js
+
+commit 819f64428ebfcabc7223e0d829cebb3feec832da 9ba9c9c159e8f7cb985c7a5ca5f83cda9ea8324e
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 14:15:21 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 14:15:21 2014 +0530
+
+    Wrap lines command added
+
+2   1   keymaps/docblockr.json
+161 3   lib/docblockr-worker.js
+
+commit 9ba9c9c159e8f7cb985c7a5ca5f83cda9ea8324e 70392cad996e230102b5622ba330c90510390862
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 01:47:18 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 01:47:18 2014 +0530
+
+    Reparse command added
+
+2   1   keymaps/docblockr.json
+69  0   lib/docblockr-worker.js
+
+commit 70392cad996e230102b5622ba330c90510390862 7838afd7345bfc58114c08eff8dd9bec4a730c3e
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu May 1 01:01:33 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu May 1 01:01:33 2014 +0530
+
+    comment scope find function added
+
+41  0   lib/docblockr-worker.js
+
+commit 7838afd7345bfc58114c08eff8dd9bec4a730c3e fc03728beec53833c1547fc9cd72bb9327f0870b
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Wed Apr 30 21:25:01 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Wed Apr 30 21:25:01 2014 +0530
+
+    Deindent command added
+
+42  10  lib/docblockr-worker.js
+
+commit fc03728beec53833c1547fc9cd72bb9327f0870b d741b6255ef8269930042bbb91ff7a1df9d0a45c
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Wed Apr 30 16:13:01 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Wed Apr 30 16:13:01 2014 +0530
+
+    join command added
+
+4   3   keymaps/docblockr.json
+43  3   lib/docblockr-worker.js
+
+commit d741b6255ef8269930042bbb91ff7a1df9d0a45c 6ba08b5c4c82cba7b695e615a955190cc59b24f8
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 29 23:19:50 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 29 23:19:50 2014 +0530
+
+    auto indent ability added
+
+52  0   lib/docblockr-worker.js
+
+commit 6ba08b5c4c82cba7b695e615a955190cc59b24f8 783b702f7a56cd0565a679dafef425974d60a5b3
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 29 23:19:14 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 29 23:19:14 2014 +0530
+
+    Enter and tab key event handlers separated
+
+2   2   keymaps/docblockr.json
+23  2   lib/docblockr-worker.js
+1   1   lib/docsparser.js
+
+commit 783b702f7a56cd0565a679dafef425974d60a5b3 5b1db8c1274051df2dce8200ac336ce2149aba4a
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 29 19:33:38 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 29 19:33:38 2014 +0530
+
+    Added support for Typescript lang
+
+107 0   lib/docsparser.js
+
+commit 5b1db8c1274051df2dce8200ac336ce2149aba4a 7be9ebab8c88cecb3af190ba7527957868438704
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 29 17:52:39 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 29 17:52:39 2014 +0530
+
+    validate_request remodelled to support pre and trail text validation
+    parse command changed to handle multiple actions
+
+47  9   lib/docblockr-worker.js
+
+commit 7be9ebab8c88cecb3af190ba7527957868438704 e65f2ff10a1bf60a2a55b77f9b95db982771d4a1
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 29 17:51:02 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 29 17:51:02 2014 +0530
+
+    Trim whitespace command supported
+
+19  0   lib/docblockr-worker.js
+
+commit e65f2ff10a1bf60a2a55b77f9b95db982771d4a1 1c867cda1156c016f0b6ce4a2379a7736cdf70d7 10805d88a8db14efda7bc8aaef20546c1876c40f
+Merge: 1c867cd 10805d8
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 29 15:35:18 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 29 15:35:18 2014 +0530
+
+    Merge branch 'feature/multiple-cursors' into develop
+
+commit 10805d88a8db14efda7bc8aaef20546c1876c40f 8a45da84138c69cd6d0a553a4ef35c41cc19859f
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 29 14:38:36 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 29 14:38:36 2014 +0530
+
+    Fixes inline comment snippet
+
+1   1   lib/docblockr-worker.js
+
+commit 8a45da84138c69cd6d0a553a4ef35c41cc19859f 30760599ad99b7411ba527f42ad76fefd5a9b519
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 29 14:25:44 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 29 14:25:44 2014 +0530
+
+    handles multiple cursors
+
+30  16  lib/docblockr-worker.js
+10  6   lib/docsparser.js
+
+commit 30760599ad99b7411ba527f42ad76fefd5a9b519 3656bfb6a49bcd22d01c4022042d1c5f84ab9118
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 29 12:54:24 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 29 12:54:24 2014 +0530
+
+    Added changelog file
+    Updated read me
+
+7   0   CHANGELOG.md
+2   0   README.md
+
+commit 3656bfb6a49bcd22d01c4022042d1c5f84ab9118 fefb0ac74a011082c8847aef1d208c3d0f2be2dc
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 29 04:42:02 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 29 04:42:02 2014 +0530
+
+    Add support for Java
+
+153 0   lib/docsparser.js
+
+commit fefb0ac74a011082c8847aef1d208c3d0f2be2dc 4b3c969c06eac4d531f49dc2fb4e16bf8a823d45
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 29 03:59:02 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 29 03:59:02 2014 +0530
+
+    Add support for ObjC Language
+
+119 1   lib/docsparser.js
+
+commit 4b3c969c06eac4d531f49dc2fb4e16bf8a823d45 b52abe1b8a537f155980645e01f884292fe2553d
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 29 03:16:30 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 29 03:16:30 2014 +0530
+
+    Add support for Actionscript language
+
+60  0   lib/docsparser.js
+
+commit b52abe1b8a537f155980645e01f884292fe2553d c5aae9194c0a83db9ec680f5b575a5741e0d119f
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Mon Apr 28 21:58:51 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Mon Apr 28 21:58:51 2014 +0530
+
+    Add support for Coffeescript
+
+84  0   lib/docsparser.js
+
+commit c5aae9194c0a83db9ec680f5b575a5741e0d119f 3963fbb511e8ef218ae5fa01abf624d1b5c966df
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Mon Apr 28 21:42:35 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Mon Apr 28 21:42:35 2014 +0530
+
+    Add support for Php Language
+
+160 12  lib/docsparser.js
+
+commit 3963fbb511e8ef218ae5fa01abf624d1b5c966df e549b6538ea2cb830bfa3d2fae570b1cc1fb7111
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Mon Apr 28 20:23:30 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Mon Apr 28 20:23:30 2014 +0530
+
+    Support for Rust Language
+
+34  0   lib/docsparser.js
+
+commit e549b6538ea2cb830bfa3d2fae570b1cc1fb7111 14f6b7a5b18a4c3b0ca1bbb98c66a60c76f2c4df
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Mon Apr 28 20:13:38 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Mon Apr 28 20:13:38 2014 +0530
+
+    parse_function returns array instead of dict
+    format_function accepts *args
+
+3   11  lib/docsparser.js
+
+commit 14f6b7a5b18a4c3b0ca1bbb98c66a60c76f2c4df 7d563d5eec9cb48175abbfbd3ff1ecf147bfb9de
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Mon Apr 28 16:10:59 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Mon Apr 28 16:10:59 2014 +0530
+
+    Added support for C, C++ and Cuda-C++ languages
+
+74  0   lib/docsparser.js
+
+commit 7d563d5eec9cb48175abbfbd3ff1ecf147bfb9de 1c867cda1156c016f0b6ce4a2379a7736cdf70d7
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Mon Apr 28 00:14:21 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Mon Apr 28 00:14:21 2014 +0530
+
+    Regex check for multiple cursors
+
+13  5   lib/docblockr-worker.js
+
+commit 1c867cda1156c016f0b6ce4a2379a7736cdf70d7 87652a6f753504dc5408600712e0f3ec8ce417b5 (tag: refs/tags/v0.3.0)
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sun Apr 27 22:17:45 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sun Apr 27 22:17:45 2014 +0530
+
+    Prepare 0.3.0 release
+
+1   1   package.json
+
+commit 87652a6f753504dc5408600712e0f3ec8ce417b5 702eb4b535202994a2c252aa0b7bfe1e95c5abbb
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sun Apr 27 22:11:51 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sun Apr 27 22:11:51 2014 +0530
+
+    Move editor dependent lines out of docsparser
+
+8   1   lib/docblockr-worker.js
+1   9   lib/docsparser.js
+
+commit 702eb4b535202994a2c252aa0b7bfe1e95c5abbb 3d4589f330829a645d8a34a82dacf96dc9f2f394 6eeb0b7d64a6d6d622a521b59a273142d7b2f517
+Merge: 3d4589f 6eeb0b7
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 04:27:55 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 04:27:55 2014 +0530
+
+    Merge branch 'master' into develop
+
+commit 6eeb0b7d64a6d6d622a521b59a273142d7b2f517 ae82e839994355edc55c48e2029a266105292d2f (tag: refs/tags/v0.2.1)
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 04:18:46 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 04:18:46 2014 +0530
+
+    Prepare 0.2.1 release
+
+1   1   package.json
+
+commit ae82e839994355edc55c48e2029a266105292d2f b3b208fa200a01da7cff26c918ba6b3a81f96269 94a579220693738b29fe6b68508cdadd76c53d32
+Merge: b3b208f 94a5792
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 04:15:40 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 04:15:40 2014 +0530
+
+    Merge branch 'release/v0.2.1'
+
+commit 3d4589f330829a645d8a34a82dacf96dc9f2f394 d91b29be6de43db45251515ccb8d0d652093e159 94a579220693738b29fe6b68508cdadd76c53d32
+Merge: d91b29b 94a5792
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 04:15:40 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 04:15:40 2014 +0530
+
+    Merge branch 'release/v0.2.1' into develop
+
+commit 94a579220693738b29fe6b68508cdadd76c53d32 d91b29be6de43db45251515ccb8d0d652093e159
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 04:15:22 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 04:15:22 2014 +0530
+
+    repo link fix
+
+1   1   package.json
+
+commit d91b29be6de43db45251515ccb8d0d652093e159 cf3ae95a2527a73574f8066bddf2e0c0793c1c77 (tag: refs/tags/v0.2.0)
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 04:10:55 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 04:10:55 2014 +0530
+
+    Prepare 0.2.0 release
+
+1   1   package.json
+
+commit cf3ae95a2527a73574f8066bddf2e0c0793c1c77 b0e1a4cbbbd6377758b1c25a5c4ae685913b6cd7
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 04:10:39 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 04:10:39 2014 +0530
+
+    Prepare 0.1.0 release
+
+2   3   package.json
+
+commit 5673c878248bc302a883ddd748cd411ec037d085 b3b208fa200a01da7cff26c918ba6b3a81f96269 76f94498a255e191129d812d110ae1a3b928efc6 (tag: refs/tags/v0.1.0)
+Merge: b3b208f 76f9449
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 03:42:48 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 03:42:48 2014 +0530
+
+    Merge branch 'release/0.1.0'
+
+commit 76f94498a255e191129d812d110ae1a3b928efc6 b0e1a4cbbbd6377758b1c25a5c4ae685913b6cd7
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 03:41:41 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 03:41:41 2014 +0530
+
+    Bump up version
+
+1   1   package.json
+
+commit b0e1a4cbbbd6377758b1c25a5c4ae685913b6cd7 b3b208fa200a01da7cff26c918ba6b3a81f96269 8798faa59c029b35f911d3b970762d4dcc537258
+Merge: b3b208f 8798faa
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 03:39:24 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 03:39:24 2014 +0530
+
+    Merge branch 'feature/create-basic-start' into develop
+
+commit 8798faa59c029b35f911d3b970762d4dcc537258 033a2ea700b2e33c168322a37c83c70e8eec75a9 (refs/remotes/origin/feature/create-basic-start)
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 03:38:29 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 03:38:29 2014 +0530
+
+    Removed unused key binding
+
+0   4   keymaps/docblockr.json
+
+commit 033a2ea700b2e33c168322a37c83c70e8eec75a9 ba7cdaa2d6bcc7b4db704a45e9ac955db60fc819
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 03:35:15 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 03:35:15 2014 +0530
+
+    menu json fix
+    fix for snippets not available on activation
+
+3   2   lib/docblockr-worker.js
+4   10  lib/docblockr.coffee
+4   4   menus/docblockr.json
+
+commit ba7cdaa2d6bcc7b4db704a45e9ac955db60fc819 0cd1dc5e4f0a31eea3ad46df0619f1046e6cac11
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 01:16:19 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 01:16:19 2014 +0530
+
+    Updated read me
+
+62  2   README.md
+
+commit 0cd1dc5e4f0a31eea3ad46df0619f1046e6cac11 c050a7151a3912b50d6b73f814f1739223fc547e
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 01:12:54 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 01:12:54 2014 +0530
+
+    gifs added
+
+-   -   resources/basic.gif
+-   -   resources/function-template.gif
+-   -   resources/long-args.gif
+-   -   resources/vars.gif
+
+commit c050a7151a3912b50d6b73f814f1739223fc547e 34de5bbec053d0d9f2a5be1afe74c59688d3e7d1
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 01:12:16 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 01:12:16 2014 +0530
+
+    Update package.json
+    Created context menu
+
+0   16  menus/docblockr.cson
+8   0   menus/docblockr.json
+1   2   package.json
+
+commit 34de5bbec053d0d9f2a5be1afe74c59688d3e7d1 3d4c30cd776caa04f1eae075903d1defa40f76a2
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 01:09:54 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 01:09:54 2014 +0530
+
+    Updated gitignore
+
+2   0   .gitignore
+0   18  test.js
+
+commit 3d4c30cd776caa04f1eae075903d1defa40f76a2 88a2c403ed5bca14ab682a9959db663a3bc8c946
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 00:16:58 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 00:16:58 2014 +0530
+
+    moved index to docsparser
+    code cleanup
+
+0   498 index.js
+2   24  lib/docblockr-worker.js
+494 0   lib/docsparser.js
+
+commit 88a2c403ed5bca14ab682a9959db663a3bc8c946 aa84ee7d0928075b251c3660ceca21e21d32057d
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 00:10:17 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 00:10:17 2014 +0530
+
+    Comments inline parser
+
+2   1   keymaps/docblockr.json
+13  5   lib/docblockr-worker.js
+
+commit aa84ee7d0928075b251c3660ceca21e21d32057d e9803995cc4e327d3617a9835039d40b85b2e618
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Sat Apr 26 00:05:22 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Sat Apr 26 00:05:22 2014 +0530
+
+    renamed toggle to parse
+    check for regex and key binding abort
+
+3   3   keymaps/docblockr.json
+17  12  lib/docblockr-worker.js
+1   1   package.json
+
+commit e9803995cc4e327d3617a9835039d40b85b2e618 e86c149373e4eee87119f1d420f4f2a8dca40ed7
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Fri Apr 25 21:06:55 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Fri Apr 25 21:06:55 2014 +0530
+
+    Moved keymaps to json
+    keymaps cleaned
+    assigned proper keybindings
+
+0   14  keymaps/docblockr.cson
+10  0   keymaps/docblockr.json
+
+commit e86c149373e4eee87119f1d420f4f2a8dca40ed7 dfd7715f14bdc65c0acaac1688e600f0f4f5bfbe
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Fri Apr 25 20:08:11 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Fri Apr 25 20:08:11 2014 +0530
+
+    Fix for variable docs
+    Code cleanup
+
+21  18  index.js
+14  52  lib/docblockr-worker.js
+
+commit dfd7715f14bdc65c0acaac1688e600f0f4f5bfbe e17558176c95419d54755b193735eddba0c61d42
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Fri Apr 25 17:57:29 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Fri Apr 25 17:57:29 2014 +0530
+
+    Add snippet end support
+
+4   0   lib/docblockr-worker.js
+
+commit e17558176c95419d54755b193735eddba0c61d42 1a6c06401ad8b006fde7cb40c374dd49a94875ea
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Fri Apr 25 17:13:38 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Fri Apr 25 17:13:38 2014 +0530
+
+    Minor fixes
+    First working version
+
+27  17  index.js
+23  11  lib/docblockr-worker.js
+
+commit 1a6c06401ad8b006fde7cb40c374dd49a94875ea c0d8b83b56a747afe23609940046ed69d1c9b598
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Fri Apr 25 01:50:37 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Fri Apr 25 01:50:37 2014 +0530
+
+    All functions implemented
+    Untested
+
+171 151 index.js
+
+commit c0d8b83b56a747afe23609940046ed69d1c9b598 1123b2dd921e05031e7035502e55f836eb2e421e
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu Apr 24 23:50:39 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu Apr 24 23:50:39 2014 +0530
+
+    Moved work from temp file to index
+    Working '/**' tags
+
+1   1   lib/docblockr-worker.js
+
+commit 1123b2dd921e05031e7035502e55f836eb2e421e 34262248998b27e4a6e7c2380ad72de5807cbd3a
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu Apr 24 23:49:25 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu Apr 24 23:49:25 2014 +0530
+
+    create_snippet function
+    commented functions in index
+
+20  17  index.js
+177 43  lib/docblockr-worker.js
+
+commit 34262248998b27e4a6e7c2380ad72de5807cbd3a 0b77f780a0afd36e01a8f6d460619e98f0acc0e8
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Thu Apr 24 03:09:20 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Thu Apr 24 03:09:20 2014 +0530
+
+    write, create snippet related functions added
+
+102 6   lib/docblockr-worker.js
+
+commit 0b77f780a0afd36e01a8f6d460619e98f0acc0e8 4cbc93b1254f22389148c79c7e1da6cccdc4738f
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Wed Apr 23 00:29:49 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Wed Apr 23 00:29:49 2014 +0530
+
+    Docsparser get_defnition function fixed
+    Moved docblockr-view.coffee to docblockr-worker.js
+    Using javascript instead of coffee-script
+
+112 84  index.js
+3   3   keymaps/docblockr.cson
+0   24  lib/docblockr-view.coffee
+131 0   lib/docblockr-worker.js
+36  10  lib/docblockr.coffee
+
+commit 4cbc93b1254f22389148c79c7e1da6cccdc4738f fe7d32c917a147d31b29d6a55621f04e5b30ff67
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Mon Apr 14 18:56:40 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Mon Apr 14 18:56:40 2014 +0530
+
+    Add expand to docblockr keymap
+
+3   0   keymaps/docblockr.cson
+
+commit fe7d32c917a147d31b29d6a55621f04e5b30ff67 6e59522f74b822d3050ad5b82e59feb827caea06
+Author:     NikhilKalige <nikhilkalige@gmail.com>
+AuthorDate: Mon Apr 14 18:32:56 2014 +0530
+Commit:     NikhilKalige <nikhilkalige@gmail.com>
+CommitDate: Mon Apr 14 18:32:56 2014 +0530
+
+    Basic Plugin Structure
+
+11  0   keymaps/docblockr.cson
+24  0   lib/docblockr-view.coffee
+16  0   lib/docblockr.coffee
+16  0   menus/docblockr.cson
+14  0   package.json
+29  0   spec/docblockr-spec.coffee
+6   0   spec/docblockr-view-spec.coffee
+8   0   stylesheets/docblockr.less
+
+commit 6e59522f74b822d3050ad5b82e59feb827caea06 5a0a45acf267844b81efe379fdf8e564236ccfb9
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Wed Apr 9 17:18:22 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Wed Apr 9 17:18:22 2014 +0530
+
+    Base class function almost done
+
+325 7   index.js
+2   0   test.js
+
+commit 5a0a45acf267844b81efe379fdf8e564236ccfb9 9919b2cf213616fee6c302216a6199e126ef15ad
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Wed Apr 9 02:18:14 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Wed Apr 9 02:18:14 2014 +0530
+
+    parse_var and get-type functions added
+    Test cases for above functions
+
+65  59  index.js
+16  0   test.js
+
+commit 9919b2cf213616fee6c302216a6199e126ef15ad b3b208fa200a01da7cff26c918ba6b3a81f96269
+Author:     Lonewolf <nikhilkalige@gmail.com>
+AuthorDate: Tue Apr 8 17:57:05 2014 +0530
+Commit:     Lonewolf <nikhilkalige@gmail.com>
+CommitDate: Tue Apr 8 17:57:05 2014 +0530
+
+    Created Parse function
+
+110 0   index.js
+0   0   test.js
+
+commit b3b208fa200a01da7cff26c918ba6b3a81f96269
+Author:     NikhilKalige <NikhilKalige@users.noreply.github.com>
+AuthorDate: Tue Apr 8 02:05:20 2014 -0700
+Commit:     NikhilKalige <NikhilKalige@users.noreply.github.com>
+CommitDate: Tue Apr 8 02:05:20 2014 -0700
+
+    Initial commit
+
+25  0   .gitignore
+21  0   LICENSE
+2   0   README.md
+
