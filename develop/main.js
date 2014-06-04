@@ -3,9 +3,10 @@
 
 
 var logparser = require('../lib/logparser.js');
-fs = require('fs');
+var fs = require('fs');
+var _gitgraph = require('./gitgraph.js');
 
-var d;
-d = fs.readFileSync('log.txt', 'utf8');
-
-console.log(logparser(d));
+var d = fs.readFileSync('log.txt', 'utf8');
+d = logparser(d);
+//console.log(logparser(d));
+var git_graph = new _gitgraph(d);
