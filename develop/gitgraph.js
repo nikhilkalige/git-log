@@ -50,32 +50,57 @@ GitGraph.prototype.set_position = function(data) {
         return false;
     }
 
+    var get_free_column = function() {
+        var i, len;
+        for(i=0; len = branches.length, i < len; i++) {
+            if(branches[i] == null)
+                return i;
+        }
+        return len;
+    }
+
+    var update_branch = function(parent, col) {
+        branches[col] = parent;
+    }
+
+    var create_branch = function(commit) {
+        var i, len, index, my_col, par_col;
+        var par, sha1;
+
+        if((index = branches.indexOf(commit.sha1)) > -1) {
+            my_col = index;
+        }
+        else {
+            my_col = get_free_column();
+        }
+
+        for(i=0; len = commit.parents.length, i < len; i++) {
+            par = commit.parents[i];
+
+            if((index = branches.indexOf(par)) > -1) {
+                branches[index] = null;
+                par_col = index;
+                update_branch(par, par_col);
+            }
+            else {
+                if(len == 1 || i == 0) {
+                    // dont create new branch
+                    update_branch(par, my_col);
+                }
+                else {
+                    par_col = get_free_column();
+                    update_branch(par, par_col);
+                }
+            }
+        }
+        return my_col;
+    }
+
     for(_i=0; _len = data.length, _i < _len; _i++) {
         var commit = data[_i];
         var position = {};
 
-        // Am i branching???
-        if(commit.parents.length > 1) {
-            var branch = {};
-            branch.parent = commit.parents[0];
-            branch.column = curr_col;
-            branches.push(branch);
-            branch_flag = true;
-        }
-
-        // skip parent check for current commit
-        if(branch_flag) {
-            position.column = curr_col;
-            curr_col++;
-            branch_flag = false;
-        }
-        else if((_col = branch_search(commit)) !== false) {
-            position.column = curr_col;
-            curr_col = _col;
-        }
-        else {
-            position.column = curr_col;
-        }
+        position.column = create_branch(commit);
         position.row = curr_row++;
         commit.position = position;
    }
@@ -85,7 +110,7 @@ GitGraph.prototype.render = function(data) {
     var self = this;
     var svg = d3.select("body").append("svg")
                 .attr("width", 600)
-                .attr("height", 600);
+                .attr("height", 4000);
 
     var circles = svg.selectAll("circle")
                     .data(data)
