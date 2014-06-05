@@ -30,25 +30,11 @@ GitGraph.prototype.set_config = function(line_height) {
 };
 
 GitGraph.prototype.set_position = function(data) {
-    var _i, _len, _col;
+    var _i, _len;
     var curr_row, curr_col;
-    var branch_flag;
     var branches = [];
 
     curr_row = curr_col = 0;
-    this.branches = [];
-    branch_flag = false;
-
-    var branch_search = function(commit) {
-        var i, len;
-        for(i=0; len = branches.length, i < len; i++) {
-            if(commit.parents.indexOf(branches[i].parent) > -1) {
-                //branches.splice(i, 1);
-                return branches[i].column;
-            }
-        }
-        return false;
-    }
 
     var get_free_column = function() {
         var i, len;
@@ -73,14 +59,16 @@ GitGraph.prototype.set_position = function(data) {
         else {
             my_col = get_free_column();
         }
+        while((index = branches.indexOf(commit.sha1)) > -1) {
+            branches[index] = null;
+        }
 
         for(i=0; len = commit.parents.length, i < len; i++) {
             par = commit.parents[i];
 
             if((index = branches.indexOf(par)) > -1) {
-                if(len == 1) branches[my_col] = null;
-                //par_col = index;
-                //update_branch(par, par_col);
+                if((len == 2) && (branches[my_col] == null)) {
+                    update_branch(par, my_col);}
             }
             else {
                 if(len == 1 || i == 0) {
