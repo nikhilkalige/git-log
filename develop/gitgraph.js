@@ -10,7 +10,7 @@ function GitGraph(data) {
 GitGraph.prototype.set_config = function(line_height) {
     var config = {};
     var circle_radius_percent = 20;
-    var circle_stroke_percent = 5.5;
+    var circle_stroke_percent = 8;
     var branch_spacing_percent = 60;
     var line_width_percent = 10;
 
@@ -30,27 +30,55 @@ GitGraph.prototype.set_config = function(line_height) {
 };
 
 GitGraph.prototype.set_position = function(data) {
-    var _i, _len;
+    var _i, _len, _col;
     var curr_row, curr_col;
+    var branch_flag;
+    var branches = [];
+
     curr_row = curr_col = 0;
     this.branches = [];
+    branch_flag = false;
+
+    var branch_search = function(commit) {
+        var i, len;
+        for(i=0; len = branches.length, i < len; i++) {
+            if(commit.parents.indexOf(branches[i].parent) > -1) {
+                //branches.splice(i, 1);
+                return branches[i].column;
+            }
+        }
+        return false;
+    }
 
     for(_i=0; _len = data.length, _i < _len; _i++) {
         var commit = data[_i];
         var position = {};
 
-        // I am the first commit
-        if(_i == 0) {
-            position.row = position.column = 0;
-            commit.position = position;
-            curr_row++;
-            continue;
+        // Am i branching???
+        if(commit.parents.length > 1) {
+            var branch = {};
+            branch.parent = commit.parents[0];
+            branch.column = curr_col;
+            branches.push(branch);
+            branch_flag = true;
         }
 
+        // skip parent check for current commit
+        if(branch_flag) {
+            position.column = curr_col;
+            curr_col++;
+            branch_flag = false;
+        }
+        else if((_col = branch_search(commit)) !== false) {
+            position.column = curr_col;
+            curr_col = _col;
+        }
+        else {
+            position.column = curr_col;
+        }
         position.row = curr_row++;
-        position.column = curr_col;
         commit.position = position;
-    }
+   }
 }
 
 GitGraph.prototype.render = function(data) {
