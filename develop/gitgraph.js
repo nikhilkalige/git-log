@@ -94,13 +94,50 @@ GitGraph.prototype.set_position = function(data) {
    }
 }
 
+GitGraph.prototype.commit_search = function(data, commit) {
+    var i, len;
+    for(i=0; len = data.length, i < len; i++) {
+        if(data[i].sha1 === commit)
+            return i;
+    }
+};
+
+GitGraph.prototype.lines = function(data) {
+    var i, len;
+    var lines = [];
+
+
+    for(i=0; len = data.length, i < len; i++) {
+        var parent, commit, j, _len;
+        var line = {};
+        line.start = {};
+        line.end = {};
+        commit = data[i];
+
+        for(j=0; _len = commit.parents.length, j < _len; j++) {
+            line.start.row = commit.position.row;
+            line.start.column = commit.position.column;
+            var index = this.commit_search(data, commit.parents[j]);
+            var parent = data[index];
+            line.end.row = parent.position.row;
+            line.end.column = parent.position.column;
+            lines.push(line);
+        }
+    }
+    return lines;
+};
+
 GitGraph.prototype.render = function(data) {
+    var lines = this.lines(data);
     var self = this;
     var svg = d3.select("body").append("svg")
                 .attr("width", 600)
                 .attr("height", 4000);
 
-    var circles = svg.selectAll("circle")
+    var circle_group = svg.append("g");
+    var line_group = svg.append("g");
+
+    var circles = circle_group.selectAll("circle")
                     .data(data)
                     .enter()
                     .append("circle");
@@ -112,6 +149,17 @@ GitGraph.prototype.render = function(data) {
                             .attr("stoke-width", function(d) { return self.config.circle.stroke })
                             .attr("fill", "#aeaeae")
                             .attr("stroke", "#000");
+
+    var line = d3.svg.line()
+                .x(function(d) {console.log("asdf");});
+
+    /*var lines = line_group.selectAll("path")
+                .data(lines)
+                .enter()
+                .append("path");*/
+
+    //lines.attr("d", line);
+    line_group.append("path").attr("d", line(lines));
     return svg;
 };
 
