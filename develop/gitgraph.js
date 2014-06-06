@@ -26,6 +26,7 @@ GitGraph.prototype.set_config = function(line_height) {
     config.line_width = percentage(line_width_percent);
     config.left_margin = line_height / 2;
     config.top_margin = line_height / 2;
+    config.cross_height = 40/100;
     return config;
 };
 
@@ -103,63 +104,93 @@ GitGraph.prototype.commit_search = function(data, commit) {
 };
 
 GitGraph.prototype.lines = function(data) {
+    var create_mid_point = function(start, end, height) {
+        var point = {};
+        if(start.x == end.x) {
+            return false;
+        }
+        else if(start.x < end.x) {
+            point.x = end.x;
+            point.y = start.y + height;
+        }
+        else {
+            point.x = start.x;
+            point.y = end.y - height;
+        }
+        return point;
+    };
+
     var i, len;
-    var lines = [];
-
-
+    var height = this.config.cross_height;
+    var line_array = [];
     for(i=0; len = data.length, i < len; i++) {
-        var parent, commit, j, _len;
-        var line = {};
-        line.start = {};
-        line.end = {};
+        var commit, j, _len;
         commit = data[i];
 
         for(j=0; _len = commit.parents.length, j < _len; j++) {
-            line.start.row = commit.position.row;
-            line.start.column = commit.position.column;
+            var line = [];
+            var p1,p2,p3;
+            p1={}; p2={}; p3={};
+
+            p1.x = commit.position.column;
+            p1.y = commit.position.row;
+            line.push(p1);
+
             var index = this.commit_search(data, commit.parents[j]);
             var parent = data[index];
-            line.end.row = parent.position.row;
-            line.end.column = parent.position.column;
-            lines.push(line);
+            p3.x = parent.position.column;
+            p3.y = parent.position.row;
+
+            if((p2 = create_mid_point(p1, p3, height)) !== false) {
+                line.push(p2);
+            }
+
+            line.push(p3);
+            line_array.push(line);
         }
     }
-    return lines;
+    return line_array;
 };
 
 GitGraph.prototype.render = function(data) {
-    var lines = this.lines(data);
+    var line_array = this.lines(data);
     var self = this;
     var svg = d3.select("body").append("svg")
                 .attr("width", 600)
                 .attr("height", 4000);
 
-    var circle_group = svg.append("g");
     var line_group = svg.append("g");
+    var circle_group = svg.append("g");
+
+    circle_group
+        .attr("stoke-width", function(d) { return self.config.circle.stroke })
+        .attr("fill", "#aeaeae")
+        .attr("stroke", "#000");
 
     var circles = circle_group.selectAll("circle")
-                    .data(data)
-                    .enter()
-                    .append("circle");
-
-    var circle_attributes = circles
-                            .attr("cx", function(d) { return (self.config.left_margin + (d.position.column * self.config.branch_spacing)) })
-                            .attr("cy", function(d) { return (self.config.top_margin + (d.position.row * self.config.circle_spacing)) })
-                            .attr("r", function(d) { return self.config.circle.radius })
-                            .attr("stoke-width", function(d) { return self.config.circle.stroke })
-                            .attr("fill", "#aeaeae")
-                            .attr("stroke", "#000");
+            .data(data)
+            .enter()
+            .append("circle")
+            .attr("cx", function(d) { return (self.config.left_margin + (d.position.column * self.config.branch_spacing)) })
+            .attr("cy", function(d) { return (self.config.top_margin + (d.position.row * self.config.circle_spacing)) })
+            .attr("r", function(d) { return self.config.circle.radius });
 
     var line = d3.svg.line()
-                .x(function(d) {console.log("asdf");});
+            .x(function(d) { return (self.config.left_margin + (d.x * self.config.branch_spacing)); })
+            .y(function(d) { return (self.config.top_margin + (d.y * self.config.circle_spacing)); });
 
-    /*var lines = line_group.selectAll("path")
-                .data(lines)
-                .enter()
-                .append("path");*/
+    line_group
+        .attr("stroke", "#000")
+        .attr("stroke-width", this.config.line_width)
+        .attr("fill", "none");
 
-    //lines.attr("d", line);
-    line_group.append("path").attr("d", line(lines));
+    var lines = line_group
+            .selectAll("path")
+            .data(line_array)
+            .enter()
+            .append("path")
+            .attr("d", line);
+
     return svg;
 };
 
