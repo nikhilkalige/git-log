@@ -67,8 +67,8 @@ GitGraph.prototype.set_position = function(data) {
             par = commit.parents[i];
 
             if((index = branches.indexOf(par)) > -1) {
-                if((len == 2) && (branches[my_col] == null)) {
-                    update_branch(par, my_col);}
+                if((branches[my_col] == null))
+                    update_branch(par, my_col);
             }
             else {
                 if(len == 1 || i == 0) {
