@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable git-log': 'git-log:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'git-log'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'git-log:toggle' }
+      ]
+    ]
+  }
+]
