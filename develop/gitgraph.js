@@ -1,5 +1,16 @@
 d3 = require('./../node_modules/d3');
 
+
+var is_empty = function(obj) {
+    if (obj == null) return true;
+    if (obj.length > 0)    return false;
+    if (obj.length === 0)  return true;
+    for (var key in obj) {
+        if (hasOwnProperty.call(obj, key)) return false;
+    }
+    return true;
+};
+
 function GitGraph(data) {
     this.config = this.set_config(20);
     this.set_position(data);
@@ -27,6 +38,18 @@ GitGraph.prototype.set_config = function(line_height) {
     config.left_margin = line_height / 2;
     config.top_margin = line_height / 2;
     config.cross_height = 40/100;
+    config.color_list = [
+        "#1f77b4", "#aec7e8",
+        "#ff7f0e", "#ffbb78",
+        "#2ca02c", "#98df8a",
+        "#d62728", "#ff9896",
+        "#9467bd", "#c5b0d5",
+        "#8c564b", "#c49c94",
+        "#e377c2", "#f7b6d2",
+        "#7f7f7f", "#c7c7c7",
+        "#bcbd22", "#dbdb8d",
+        "#17becf", "#9edae5"
+    ];
     return config;
 };
 
@@ -122,30 +145,56 @@ GitGraph.prototype.lines = function(data) {
 
     var i, len;
     var height = this.config.cross_height;
+    var colors = this.config.color_list;
     var line_array = [];
+    var line_color = [];
     for(i=0; len = data.length, i < len; i++) {
         var commit, j, _len;
         commit = data[i];
+        // assign color for commit
+        if(line_color[commit.position.column] == null) {
+            clr = colors.shift();
+            line_color[commit.position.column] = clr;
+        }
+        else {
+            clr = line_color[commit.position.column];
+        }
+        commit.position.color = clr;
 
         for(j=0; _len = commit.parents.length, j < _len; j++) {
             var line = [];
-            var p1,p2,p3;
-            p1={}; p2={}; p3={};
-
-            p1.x = commit.position.column;
-            p1.y = commit.position.row;
-            line.push(p1);
+            var start, mid, end, clr;
+            start={}; mid={}; end={};
 
             var index = this.commit_search(data, commit.parents[j]);
             var parent = data[index];
-            p3.x = parent.position.column;
-            p3.y = parent.position.row;
 
-            if((p2 = create_mid_point(p1, p3, height)) !== false) {
-                line.push(p2);
+            start.x = commit.position.column;
+            start.y = commit.position.row;
+            end.x = parent.position.column;
+            end.y = parent.position.row;
+
+            if(start.x == end.x) {
+                //start.color = clr;
             }
+            else if(start.x < end.x) {
 
-            line.push(p3);
+                mid.x = end.x;
+                mid.y = start.y + height;
+                clr = colors.shift();
+                line_color[end.x] = clr;
+            }
+            else {
+                mid.x = start.x;
+                mid.y = end.y - height;
+                colors.push(clr);
+                line_color[start.x] = null;
+            }
+            start.color = clr;
+            line.push(start);
+            if(is_empty(mid) == false)
+                line.push(mid);
+            line.push(end);
             line_array.push(line);
         }
     }
@@ -154,6 +203,7 @@ GitGraph.prototype.lines = function(data) {
 
 GitGraph.prototype.render = function(data) {
     var line_array = this.lines(data);
+    console.log(line_array);
     var self = this;
     var svg = d3.select("body").append("svg")
                 .attr("width", 600)
@@ -164,7 +214,7 @@ GitGraph.prototype.render = function(data) {
 
     circle_group
         .attr("stoke-width", function(d) { return self.config.circle.stroke })
-        .attr("fill", "#aeaeae")
+        //.attr("fill", "#aeaeae")
         .attr("stroke", "#000");
 
     var circles = circle_group.selectAll("circle")
@@ -173,7 +223,8 @@ GitGraph.prototype.render = function(data) {
             .append("circle")
             .attr("cx", function(d) { return (self.config.left_margin + (d.position.column * self.config.branch_spacing)) })
             .attr("cy", function(d) { return (self.config.top_margin + (d.position.row * self.config.circle_spacing)) })
-            .attr("r", function(d) { return self.config.circle.radius });
+            .attr("r", function(d) { return self.config.circle.radius })
+            .attr("fill", function(d) { return d.position.color; });
 
     var line = d3.svg.line()
             .x(function(d) { return (self.config.left_margin + (d.x * self.config.branch_spacing)); })
@@ -189,10 +240,10 @@ GitGraph.prototype.render = function(data) {
             .data(line_array)
             .enter()
             .append("path")
-            .attr("d", line);
+            .attr("d", line)
+            .attr("stroke", function(d) { return d[0].color; });
 
     return svg;
 };
-
 
 module.exports = GitGraph;
