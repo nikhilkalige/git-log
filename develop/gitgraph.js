@@ -38,17 +38,24 @@ GitGraph.prototype.set_config = function(line_height) {
     config.left_margin = line_height / 2;
     config.top_margin = line_height / 2;
     config.cross_height = 40/100;
+    /*config.color_list = [
+        "#1f77b4", "#aec7e8", "#ff7f0e", "#ffbb78", "#2ca02c", "#98df8a", "#d62728", "#ff9896",
+        "#9467bd", "#c5b0d5", "#8c564b", "#c49c94", "#e377c2", "#f7b6d2", "#7f7f7f", "#c7c7c7",
+        "#bcbd22", "#dbdb8d","#17becf", "#9edae5"
+    ];
     config.color_list = [
-        "#1f77b4", "#aec7e8",
-        "#ff7f0e", "#ffbb78",
-        "#2ca02c", "#98df8a",
-        "#d62728", "#ff9896",
-        "#9467bd", "#c5b0d5",
-        "#8c564b", "#c49c94",
-        "#e377c2", "#f7b6d2",
-        "#7f7f7f", "#c7c7c7",
-        "#bcbd22", "#dbdb8d",
-        "#17becf", "#9edae5"
+        "#393b79", "#5254a3", "#6b6ecf", "#9c9ede", "#637939", "#8ca252", "#b5cf6b", "#cedb9c",
+        "#8c6d31", "#bd9e39", "#e7ba52", "#e7cb94", "#843c39", "#ad494a", "#d6616b", "#e7969c",
+        "#7b4173", "#a55194", "#ce6dbd", "#de9ed6"
+    ];
+    config.color_list = [
+        "#3182bd", "#6baed6", "#9ecae1", "#c6dbef", "#e6550d", "#fd8d3c", "#fdae6b", "#fdd0a2",
+        "#31a354", "#74c476", "#a1d99b", "#c7e9c0", "#756bb1", "#9e9ac8", "#bcbddc", "#dadaeb",
+        "#636363", "#969696", "#bdbdbd", "#d9d9d9"
+    ];*/
+    config.color_list = [
+        "#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f",
+        "#bcbd22", "#17becf"
     ];
     return config;
 };
@@ -174,17 +181,14 @@ GitGraph.prototype.lines = function(data) {
             end.x = parent.position.column;
             end.y = parent.position.row;
 
-            if(start.x == end.x) {
-                //start.color = clr;
-            }
-            else if(start.x < end.x) {
+            if(start.x < end.x) {
 
                 mid.x = end.x;
                 mid.y = start.y + height;
                 clr = colors.shift();
                 line_color[end.x] = clr;
             }
-            else {
+            else if(start.x > end.x) {
                 mid.x = start.x;
                 mid.y = end.y - height;
                 colors.push(clr);
@@ -203,7 +207,6 @@ GitGraph.prototype.lines = function(data) {
 
 GitGraph.prototype.render = function(data) {
     var line_array = this.lines(data);
-    console.log(line_array);
     var self = this;
     var svg = d3.select("body").append("svg")
                 .attr("width", 600)
@@ -214,7 +217,6 @@ GitGraph.prototype.render = function(data) {
 
     circle_group
         .attr("stoke-width", function(d) { return self.config.circle.stroke })
-        //.attr("fill", "#aeaeae")
         .attr("stroke", "#000");
 
     var circles = circle_group.selectAll("circle")
