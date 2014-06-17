@@ -1,9 +1,8 @@
 {
   "name": "git-log",
-  "main": "./lib/git-log",
+  "main": "./lib/git-log.js",
   "version": "0.0.0",
   "description": "A short description of your package",
-  "activationEvents": ["git-log:toggle"],
   "repository": "https://github.com/atom/git-log",
   "license": "MIT",
   "engines": {

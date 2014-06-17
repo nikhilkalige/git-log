@@ -1,4 +1,4 @@
-{View} = require 'atom'
+###{View} = require 'atom'
 
 module.exports =
 class GitLogView extends View
@@ -22,3 +22,4 @@ class GitLogView extends View
       @detach()
     else
       atom.workspaceView.append(this)
+###
