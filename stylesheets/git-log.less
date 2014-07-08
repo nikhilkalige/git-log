@@ -2,35 +2,30 @@
 
 .git-log {
     overflow: auto;
-    display: -webkit-flex;
-    -webkit-flex-direction: row;
-    position: relative;
-    white-space: nowrap;
-    overflow-x: scroll;
+    //white-space: nowrap;
+    //overflow-x: scroll;
 
-    .underlay {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        right: 0px;
+    .panels {
+        display: -webkit-flex;
+        -webkit-flex-direction: row;
         background-image: linear-gradient(transparent 50%, rgba(0,0,0,0.2) 50%);
-        background-size: 49px 40px;
+        background-size: 40px 40px;
     }
     p {
-        line-height: 20px;
         margin: 0px;
     }
     .column {
         text-align: center;
         flex: 1 0 auto;
-        padding: 0 1.5em;
+        padding: 0 0.5em;
     }
     .graph {
-        //flex-grow: 0;
-        padding: 0 1em;
     }
     .description {
-        //flex-grow: 12;
+        text-align: left;
+        h2 {
+            text-align: center;
+        }
     }
     .date {
         white-space: nowrap;
