@@ -22,6 +22,8 @@
     }
 
     table {
+        max-width: 100%;
+
         th {
             height: @table-header-height;
 
@@ -41,6 +43,24 @@
             &:nth-child(odd) {
                 background: rgba(0,0,0,0.3);
             }
+        }
+
+        td {
+          position: relative;
+          &:before {
+            content: '\00a0'
+          }
+
+          div {
+            position: absolute;
+            display: block;
+            left: 0;
+            right: 0;
+            top: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
         }
     }
 }
