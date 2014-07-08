@@ -4,7 +4,7 @@ module.exports =
 
 class GitLogView extends ScrollView
     @content: ->
-        @div class: 'git-log pane-item native-key-bindings', tabindex: -1, =>
+        @div class: 'git-log  editor editor-colors native-key-bindings', tabindex: -1, =>
             @div class: 'panels', =>
                 @subview 'graph', new ColumnView('Graph', 'graph')
                 @subview 'comments', new ColumnView('Description', 'comments')
@@ -28,34 +28,10 @@ class GitLogView extends ScrollView
 class ColumnView extends View
     @content: (title, class_name) ->
         @div class: 'column ' + class_name, =>
-            @h2 title
-            @div class: 'list', outlet: 'list'
+            @div class: 'list', =>
+                @h2 title
+            @div class: 'list background', outlet: 'list'
 
     add_content: (content) ->
         @list.append $$ ->
             @p content
-
-class GraphView extends View
-    @content: ->
-        @div class: 'graph column', outlet: 'graph', =>
-            @h2 'Graph'
-
-class CommentsView extends View
-    @content: ->
-        @div class: 'description column', outlet: 'comments', =>
-            @h2 'Description'
-
-class CommitView extends View
-    @content: ->
-        @div class: 'column commit', outlet: 'commit', =>
-            @h2 'Commit'
-
-class DateView extends View
-    @content: ->
-        @div class: 'column date', outlet: 'date', =>
-            @h2 'Date'
-
-class AuthorView extends View
-    @content: ->
-        @div class: 'column author', outlet: 'author', =>
-            @h2 'Author'
