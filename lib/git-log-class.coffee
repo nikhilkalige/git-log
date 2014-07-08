@@ -4,7 +4,7 @@ module.exports =
 
 class GitLogView extends ScrollView
     @content: ->
-        @div class: 'git-log  editor editor-colors native-key-bindings', tabindex: -1, =>
+        @div class: 'git-log native-key-bindings', tabindex: -1, =>
             @div class: 'panels', =>
                 @subview 'graph', new ColumnView('Graph', 'graph')
                 @subview 'comments', new ColumnView('Description', 'comments')
