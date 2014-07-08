@@ -1,5 +1,9 @@
+@import 'syntax-variables';
 .git-log {
     overflow: auto;
+    font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
+    background-color: @syntax-background-color;
+    color: @syntax-text-color;
 
     .panels {
         display: -webkit-flex;
@@ -41,7 +45,7 @@
     }
 
     h2 {
-        font-size: 1.4em;
+        font-size: 1.2em;
         border-bottom: rgba(255,255,255,.5)1px solid;
         margin: 0px;
         background-color: rgba(0,0,0,.3);
