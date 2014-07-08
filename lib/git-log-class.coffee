@@ -11,19 +11,9 @@ class GitLogView extends ScrollView
                 @subview 'commit', new ColumnView('Commit', 'commit')
                 @subview 'date', new ColumnView('Date', 'date')
                 @subview 'author', new ColumnView('Author', 'author')
-                #@subview 'graph', new GraphView()
-                #@subview 'comments', new CommentsView()
-                #@subview 'commit', new CommitView()
-                #@subview 'date', new DateView()
-                #@subview 'author', new AuthorView()
-
-    initialize: ->
-        super
-        console.log "asdf"
 
     constructor: ->
         super
-        console.log "asdf"
 
 class ColumnView extends View
     @content: (title, class_name) ->
