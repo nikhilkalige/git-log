@@ -1,6 +1,7 @@
 @import 'syntax-variables';
+@import 'ui-variables';
 
-@table-header-height: 40px;
+@table-header-height: 42px;
 @graph-width: 100px;
 @graph-top-offset: 1px;
 
@@ -41,21 +42,51 @@
 
         tr {
             &:nth-child(odd) {
-                background: rgba(0,0,0,0.3);
+                background: rgba(0,0,0,0.2);
             }
         }
 
         td {
           position: relative;
           &:before {
-            content: '\00a0'
+            content: '\00a0';
+          }
+
+          .tag {
+            background: @background-color-selected;
+            color: @text-color-selected;
+            text-shadow: 0 0 2px rgba(0,0,0,0.5);
+            padding: 3px 4px;
+            padding-right: 15px;
+            border-radius: 3px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            font-size: 0.8em;
+            margin-top: -3px;
+            line-height: 1em;
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+
+            &:after {
+              content: '';
+              display: block;
+              width: 6px;
+              height: 6px;
+              position: absolute;
+              background: @syntax-background-color;
+              right: 4px;
+              top: 50%;
+              margin-top: -3px;
+              border-radius: 50%;
+            }
           }
 
           div {
             position: absolute;
             display: block;
-            left: 0;
-            right: 0;
+            left: 5px;
+            right: 5px;
             top: 0;
             white-space: nowrap;
             overflow: hidden;
