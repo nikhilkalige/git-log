@@ -1,8 +1,55 @@
-// The ui-variables file is provided by base themes provided by Atom.
-//
-// See https://github.com/atom/atom-dark-ui/blob/master/stylesheets/ui-variables.less
-// for a full listing of what's available.
-@import "ui-variables";
-
+@import 'syntax-variables';
 .git-log {
+    overflow: auto;
+    font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
+    background-color: @syntax-background-color;
+    color: @syntax-text-color;
+
+    .panels {
+        display: -webkit-flex;
+        -webkit-flex-direction: row;
+        white-space: nowrap;
+    }
+
+    p {
+        margin: 0px;
+        line-height: inherit;
+        padding: 0 2em;
+    }
+
+    .column {
+        text-align: center;
+        flex: 1 0 auto;
+        padding: 0 2em;
+    }
+
+    .graph {
+        padding: 0 1em;
+        .list {
+            margin: 0 -0.95em;
+        }
+    }
+
+    svg {
+        margin: 0 1em;
+    }
+
+    .list {
+        text-align: left;
+        margin: 0 -1.95em;
+    }
+
+    .background {
+        background-image: linear-gradient(transparent 50%, rgba(0,0,0,0.3) 50%);
+        background-size: 40px 40px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        border-bottom: rgba(255,255,255,.5)1px solid;
+        margin: 0px;
+        background-color: rgba(0,0,0,.3);
+        padding: 10px 0;
+        text-align: center;
+    }
 }
