@@ -1,4 +1,9 @@
 @import 'syntax-variables';
+
+@padding: 1em;
+@margin: @padding - 0.05em;
+@padding-bigger: 1.5em;
+
 .git-log {
     overflow: auto;
     font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
@@ -13,25 +18,27 @@
 
     .column {
         text-align: center;
-        flex: 1 0 auto;
-        padding: 0 2em;
+        //flex: 1 0 auto;
+        padding: 0 @padding;
+    }
+
+    .list {
+        position: relative;
+        text-align: left;
+        margin: 0 -@margin;
     }
 
     .graph {
-        padding: 0 1em;
         z-index: 2;
-        .list {
-            margin: 0 -0.95em;
-        }
     }
 
     svg {
         margin: 0 1em;
     }
 
-    .list {
-        text-align: left;
-        margin: 0 -1.95em;
+    .table {
+        width: 100%;
+        display: flex;
     }
 
     h2 {
@@ -46,7 +53,7 @@
     p {
         margin: 0px;
         line-height: inherit;
-        padding: 0 2em;
+        padding: 0 @padding;
         position: relative;
 
         &:nth-child(odd) {
@@ -56,14 +63,40 @@
         &:nth-child(even) {
             //background: rgba(0,0,0,0.3);
         }
+
+        span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+        }
     }
 
-    .comments p::before {
-        content: "";
-        display: block;
+    .comments {
+        width: 70%;
+        p::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            background: inherit;
+        }
+    }
+
+    .commit, .date, .author {
+        width: 10%;
+    }
+
+    .commit p {
+        padding-left: @padding-bigger;
+    }
+
+    .resize-handle {
         position: absolute;
-        top: 0px;
-        bottom: 0px;
-        background: inherit;
+        width: 10px;
+        top: 0;
+        bottom: 0;
+        right: -5px;
+        cursor: col-resize;
     }
 }
