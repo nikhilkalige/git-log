@@ -20,7 +20,7 @@ class ColumnView extends View
         @div class: 'column ' + class_name, =>
             @div class: 'list', =>
                 @h2 title
-            @div class: 'list background', outlet: 'list'
+            @div class: 'list', outlet: 'list'
 
     add_content: (content) ->
         @list.append $$ ->
