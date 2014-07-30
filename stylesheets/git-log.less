@@ -9,6 +9,7 @@
     font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
     background-color: @syntax-background-color;
     color: @syntax-text-color;
+    overflow-x: scroll;
 
     .panels {
         display: -webkit-flex;
@@ -18,7 +19,7 @@
 
     .column {
         text-align: center;
-        //flex: 1 0 auto;
+        flex: 1 0;
         padding: 0 @padding;
     }
 
@@ -30,6 +31,7 @@
 
     .graph {
         z-index: 2;
+        flex: 0 0 auto !important;
     }
 
     svg {
@@ -39,6 +41,7 @@
     .table {
         width: 100%;
         display: flex;
+        flex: 1 0;
     }
 
     h2 {
@@ -72,7 +75,7 @@
     }
 
     .comments {
-        width: 70%;
+        flex-basis: 70%;
         p::before {
             content: "";
             display: block;
@@ -84,7 +87,7 @@
     }
 
     .commit, .date, .author {
-        width: 10%;
+        flex-basis: 10%;
     }
 
     .commit p {
