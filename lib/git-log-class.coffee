@@ -7,7 +7,7 @@ class GitLogView extends ScrollView
         @div class: 'git-log native-key-bindings', tabindex: -1, =>
             @div class: 'panels', =>
                 @subview 'graph', new ColumnView('Graph', 'graph')
-                @div class: 'table', =>
+                @div class: 'table', outlet: 'table', =>
                     @subview 'comments', new ColumnView('Description', 'comments', true)
                     @subview 'commit', new ColumnView('Commit', 'commit', true)
                     @subview 'date', new ColumnView('Date', 'date', true)
