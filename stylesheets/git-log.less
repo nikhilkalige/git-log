@@ -1,9 +1,15 @@
 @import 'syntax-variables';
+
+@padding: 1em;
+@margin: @padding - 0.05em;
+@padding-bigger: 1.5em;
+
 .git-log {
     overflow: auto;
     font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
     background-color: @syntax-background-color;
     color: @syntax-text-color;
+    overflow-x: scroll;
 
     .panels {
         display: -webkit-flex;
@@ -11,45 +17,89 @@
         white-space: nowrap;
     }
 
-    p {
-        margin: 0px;
-        line-height: inherit;
-        padding: 0 2em;
-    }
-
     .column {
         text-align: center;
-        flex: 1 0 auto;
-        padding: 0 2em;
+        flex: 1 0;
+        padding: 0 @padding;
+    }
+
+    .list {
+        position: relative;
+        text-align: left;
+        margin: 0 -@margin;
     }
 
     .graph {
-        padding: 0 1em;
-        .list {
-            margin: 0 -0.95em;
-        }
+        z-index: 2;
+        flex: 0 0 auto !important;
     }
 
     svg {
         margin: 0 1em;
     }
 
-    .list {
-        text-align: left;
-        margin: 0 -1.95em;
-    }
-
-    .background {
-        background-image: linear-gradient(transparent 50%, rgba(0,0,0,0.3) 50%);
-        background-size: 40px 40px;
+    .table {
+        width: 100%;
+        display: flex;
+        flex: 1 0;
     }
 
     h2 {
-        font-size: 1.2em;
+        font-size: 1.1em;
         border-bottom: rgba(255,255,255,.5)1px solid;
         margin: 0px;
         background-color: rgba(0,0,0,.3);
         padding: 10px 0;
         text-align: center;
+    }
+
+    p {
+        margin: 0px;
+        line-height: inherit;
+        padding: 0 @padding;
+        position: relative;
+
+        &:nth-child(odd) {
+            background: rgba(0,0,0,0.3);
+        }
+
+        &:nth-child(even) {
+            //background: rgba(0,0,0,0.3);
+        }
+
+        span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+        }
+    }
+
+    .comments {
+        flex-basis: 70%;
+        p::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            background: inherit;
+        }
+    }
+
+    .commit, .date, .author {
+        flex-basis: 10%;
+    }
+
+    .commit p {
+        padding-left: @padding-bigger;
+    }
+
+    .resize-handle {
+        position: absolute;
+        width: 10px;
+        top: 0;
+        bottom: 0;
+        right: -5px;
+        cursor: col-resize;
     }
 }
