@@ -76,13 +76,17 @@
 
     .comments {
         flex-basis: 70%;
-        p::before {
+        p::before, p::after {
             content: "";
             display: block;
             position: absolute;
             top: 0px;
             bottom: 0px;
             background: inherit;
+        }
+        p::after {
+            z-index: 4;
+            opacity: 0;
         }
     }
 
