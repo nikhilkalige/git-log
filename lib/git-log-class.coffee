@@ -5,7 +5,23 @@ module.exports =
 class GitLogView extends ScrollView
     @content: ->
         @div class: 'git-log native-key-bindings', tabindex: -1, =>
-            @div class: 'panels', =>
+            @subview 'main_panel', new MainPanelView
+            @subview 'info_panel', new InfoPanelView
+            #@div class: 'panels', =>
+            #    @subview 'graph', new ColumnView('Graph', 'graph')
+            #    @div class: 'table', outlet: 'table', =>
+            #        @subview 'comments', new ColumnView('Description', 'comments', true)
+            #        @subview 'commit', new ColumnView('Commit', 'commit', true)
+            #        @subview 'date', new ColumnView('Date', 'date', true)
+            #        @subview 'author', new ColumnView('Author', 'author')
+
+    constructor: ->
+        super
+
+
+class MainPanelView extends ScrollView
+    @content:->
+        @div class: 'main panels', =>
                 @subview 'graph', new ColumnView('Graph', 'graph')
                 @div class: 'table', outlet: 'table', =>
                     @subview 'comments', new ColumnView('Description', 'comments', true)
@@ -13,8 +29,17 @@ class GitLogView extends ScrollView
                     @subview 'date', new ColumnView('Date', 'date', true)
                     @subview 'author', new ColumnView('Author', 'author')
 
-    constructor: ->
-        super
+
+class InfoPanelView extends ScrollView
+    @content: ->
+        @div class: 'info panels', =>
+            p 'asdfasdfasdfasdf'
+            p 'asdfasdfasdfasdf'
+            p 'asdfasdfasdfasdf'
+            p 'asdfasdfasdfasdf'
+            p 'asdfasdfasdfasdf'
+            
+
 
 class ColumnView extends View
     @content: (title, class_name, resizable) ->
