@@ -25,10 +25,12 @@ class MainPanelView extends ScrollView
 
 class InfoPanelView extends ScrollView
     @content: ->
-        @div class: 'info panels'
+        @div class: 'info panels', =>
+            @div class: 'info-data', outlet: 'info_data'
+            @div class: 'info-image', outlet: 'info_image'
 
     add_content: (head, content) ->
-        @append $$ ->
+        @info_data.append $$ ->
             @h2 =>
                 @text head
                 @span content

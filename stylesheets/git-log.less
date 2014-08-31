@@ -99,15 +99,21 @@
             background: none !important;
             flex-shrink: 0;
         }
+    }
+
+    .info-image {
+        position: absolute;
+        top: @info-padding-top;
+        right: 1em;
 
         img {
             width: @gravatar-size;
-            position: absolute;
-            top: @info-padding-top;
-            right: 1em;
 
+            &:first-child {
+                margin-right: 1px;
+            }
         }
-    }               
+    }
 
     .column {
         text-align: center;
