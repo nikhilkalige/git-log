@@ -4,20 +4,108 @@
 @margin: @padding - 0.05em;
 @padding-bigger: 1.5em;
 
+@gravatar-size: 64px;
+@info-padding-top: 0.5em;
+
 .git-log {
     overflow: auto;
     font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
     background-color: @syntax-background-color;
     color: @syntax-text-color;
-    overflow-x: scroll;
+    //overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        margin: 0px;
+        font-family: inherit;
+        font-size: 1.1em;
+    }
+
+    p {
+        margin: 0px;
+        line-height: inherit;
+        padding: 0 @padding;    
+    }
 
     .panels {
         display: -webkit-flex;
         -webkit-flex-direction: row;
+        overflow: auto;
     }
 
     .main {        
         white-space: nowrap;
+        //height: 70%;
+
+        h2 {
+            border-bottom: rgba(255,255,255,.5)1px solid;
+            background-color: rgba(0,0,0,.3);
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        p {
+            position: relative;
+
+            &:nth-child(odd) {
+                background: rgba(0,0,0,0.3);
+            }
+
+            &:nth-child(even) {
+                //background: rgba(0,0,0,0.3);
+            }
+
+            span {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: block;
+            }
+        }
+    }
+
+    .info {
+        max-height: 30%;
+        border-top: solid 5px rgba(0,0,0,0.3);
+        flex-direction: column;
+        flex-shrink: 0;
+        position: relative;
+        background-color: rgba(0,0,0,0.6);
+
+        h2 {
+            border: none;
+            text-align: left;
+            line-height: inherit;
+            padding: 0 1em;
+            flex-shrink: 0;
+            border: none;
+            background: none !important;
+            font-size: 1em;
+            font-weight: bold;
+
+            &:first-child {
+                padding-top: @info-padding-top;
+            }
+
+            span {
+                font-weight: normal;
+                font-size: 1em;
+                padding-left: 8px;
+            }
+        }
+        p {
+            padding-top: 1em;
+            padding-bottom: 0.5em;
+            background: none !important;
+        }
+
+        img {
+            width: @gravatar-size;
+            position: absolute;
+            top: @info-padding-top;
+            right: 1em;
+
+        }
     }               
 
     .column {
@@ -45,36 +133,6 @@
         width: 100%;
         display: flex;
         flex: 1 0;
-    }
-
-    h2 {
-        font-size: 1.1em;
-        border-bottom: rgba(255,255,255,.5)1px solid;
-        margin: 0px;
-        background-color: rgba(0,0,0,.3);
-        padding: 10px 0;
-        text-align: center;
-    }
-
-    p {
-        margin: 0px;
-        line-height: inherit;
-        padding: 0 @padding;
-        position: relative;
-
-        &:nth-child(odd) {
-            background: rgba(0,0,0,0.3);
-        }
-
-        &:nth-child(even) {
-            //background: rgba(0,0,0,0.3);
-        }
-
-        span {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: block;
-        }
     }
 
     .comments {

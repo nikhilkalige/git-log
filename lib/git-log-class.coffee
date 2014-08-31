@@ -2,18 +2,11 @@
 
 module.exports =
 
-class GitLogView extends ScrollView
+class GitLogView extends View
     @content: ->
         @div class: 'git-log native-key-bindings', tabindex: -1, =>
             @subview 'main_panel', new MainPanelView
             @subview 'info_panel', new InfoPanelView
-            #@div class: 'panels', =>
-            #    @subview 'graph', new ColumnView('Graph', 'graph')
-            #    @div class: 'table', outlet: 'table', =>
-            #        @subview 'comments', new ColumnView('Description', 'comments', true)
-            #        @subview 'commit', new ColumnView('Commit', 'commit', true)
-            #        @subview 'date', new ColumnView('Date', 'date', true)
-            #        @subview 'author', new ColumnView('Author', 'author')
 
     constructor: ->
         super
@@ -32,13 +25,13 @@ class MainPanelView extends ScrollView
 
 class InfoPanelView extends ScrollView
     @content: ->
-        @div class: 'info panels', =>
-            p 'asdfasdfasdfasdf'
-            p 'asdfasdfasdfasdf'
-            p 'asdfasdfasdfasdf'
-            p 'asdfasdfasdfasdf'
-            p 'asdfasdfasdfasdf'
-            
+        @div class: 'info panels'
+
+    add_content: (head, content) ->
+        @append $$ ->
+            @h2 =>
+                @text head
+                @span content
 
 
 class ColumnView extends View
@@ -53,3 +46,5 @@ class ColumnView extends View
         @list.append $$ ->
             @p =>
                 @span content
+
+
