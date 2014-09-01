@@ -26,8 +26,16 @@ class MainPanelView extends ScrollView
 class InfoPanelView extends ScrollView
     @content: ->
         @div class: 'info panels', =>
+            @div class:'resize-handle-hor'
             @div class: 'info-data', outlet: 'info_data'
             @div class: 'info-image', outlet: 'info_image'
+            @div class:'info-file', outlet: 'info_file', =>
+                @div class:'resize-handle-hor'
+                @subview 'status', new ColumnView('Status', 'status')
+                @subview 'name', new ColumnView('Filename', 'file')
+                @subview 'path', new ColumnView('Path', 'path')
+                @subview 'addition', new ColumnView('Addition', 'add')
+                @subview 'deletion', new ColumnView('Deletion', 'del')
 
     add_content: (head, content) ->
         @info_data.append $$ ->
@@ -39,7 +47,7 @@ class InfoPanelView extends ScrollView
 class ColumnView extends View
     @content: (title, class_name, resizable) ->
         @div class: 'column ' + class_name, =>
-            @div class: 'list', =>
+            @div class: 'list-head', =>
                 @h2 title
                 @div class:'resize-handle' if resizable
             @div class: 'list', outlet: 'list'
