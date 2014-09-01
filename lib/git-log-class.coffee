@@ -26,12 +26,9 @@ class MainPanelView extends ScrollView
 class InfoPanelView extends ScrollView
     @content: ->
         @div class: 'info panels', =>
-            @div class:'resize-handle-hor'
             @div class: 'info-data', outlet: 'info_data'
             @div class: 'info-image', outlet: 'info_image'
             @div class:'info-file', outlet: 'info_file', =>
-                @div class:'resize-handle-hor'
-                @subview 'status', new ColumnView('Status', 'status')
                 @subview 'name', new ColumnView('Filename', 'file')
                 @subview 'path', new ColumnView('Path', 'path')
                 @subview 'addition', new ColumnView('Addition', 'add')

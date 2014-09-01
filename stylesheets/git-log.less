@@ -62,10 +62,16 @@
                 display: block;
             }
         }
+
+        .list, .list-head {
+            position: relative;
+            text-align: left;
+            margin: 0 -@margin;
+        }
     }
 
     .info {
-        max-height: 30%;
+        flex-basis: 35%;
         flex-direction: column;
         flex-shrink: 0;
         position: relative;
@@ -124,19 +130,22 @@
         display: flex;
         flex-shrink: 0;
         border-top: solid 1px;
-        border-bottom: solid 1px; 
+        margin-top: 1em;
+
+        .list-head {
+            border-bottom: solid 1px;
+            margin: 0 -@margin;
+        }
+        .column {
+            text-align: left;
+        }
     }
+
 
     .column {
         text-align: center;
         flex: 1 0;
         padding: 0 @padding;
-    }
-
-    .list, .list-head {
-        position: relative;
-        text-align: left;
-        margin: 0 -@margin;
     }
 
     .graph {
