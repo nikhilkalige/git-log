@@ -29,6 +29,7 @@ class InfoPanelView extends ScrollView
             @div class: 'info-data', outlet: 'info_data'
             @div class: 'info-image', outlet: 'info_image'
             @div class:'info-file', outlet: 'info_file', =>
+                @subview 'status', new ColumnView('Status', 'status')
                 @subview 'name', new ColumnView('Filename', 'file')
                 @subview 'path', new ColumnView('Path', 'path')
                 @subview 'addition', new ColumnView('Addition', 'add')
