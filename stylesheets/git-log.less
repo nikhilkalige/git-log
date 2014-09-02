@@ -1,0 +1,210 @@
+@import 'syntax-variables';
+
+@padding: 1em;
+@margin: @padding - 0.05em;
+@padding-bigger: 1.5em;
+
+@gravatar-size: 64px;
+@info-padding-top: 0.5em;
+
+.git-log {
+    overflow: auto;
+    font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
+    background-color: @syntax-background-color;
+    color: @syntax-text-color;
+    //overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        margin: 0px;
+        font-family: inherit;
+        font-size: 1.1em;
+    }
+
+    p {
+        margin: 0px;
+        line-height: inherit;
+        padding: 0 @padding;    
+    }
+
+    .panels {
+        display: -webkit-flex;
+        -webkit-flex-direction: row;
+        overflow: auto;
+    }
+
+    .main {        
+        white-space: nowrap;
+        //height: 70%;
+
+        h2 {
+            border-bottom: rgba(255,255,255,.5)1px solid;
+            background-color: rgba(0,0,0,.3);
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        p {
+            position: relative;
+
+            &:nth-child(odd) {
+                background: rgba(0,0,0,0.3);
+            }
+
+            &:nth-child(even) {
+                //background: rgba(0,0,0,0.3);
+            }
+
+            span {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: block;
+            }
+        }
+
+        .list, .list-head {
+            position: relative;
+            text-align: left;
+            margin: 0 -@margin;
+        }
+    }
+
+    .info {
+        flex-basis: 35%;
+        flex-direction: column;
+        flex-shrink: 0;
+        position: relative;
+        background-color: rgba(0,0,0,0.6);
+
+        h2 {
+            border: none;
+            text-align: left;
+            line-height: inherit;
+            padding: 0 1em;
+            flex-shrink: 0;
+            border: none;
+            background: none !important;
+            font-size: 1em;
+            font-weight: bold;
+
+            &:first-child {
+                padding-top: @info-padding-top;
+            }
+
+            span {
+                font-weight: normal;
+                font-size: 1em;
+                padding-left: 8px;
+            }
+        }
+        p {
+            padding-top: 1em;
+            margin-bottom: 0.5em;
+            background: none !important;
+            flex-shrink: 0;
+        }
+    }
+
+    .info-data {
+        border-top: solid 5px rgba(0,0,0,0.3);
+        position: relative;
+        flex-shrink: 0;
+    }
+
+    .info-image {
+        position: absolute;
+        top: @info-padding-top;
+        right: 1em;
+
+        img {
+            width: @gravatar-size;
+
+            &:first-child {
+                margin-right: 1px;
+            }
+        }
+    }
+
+    .info-file {
+        display: flex;
+        flex-shrink: 0;
+        border-top: solid 1px;
+        margin-top: 1em;
+
+        .list-head {
+            border-bottom: solid 1px;
+            margin: 0 -@margin;
+        }
+        .column {
+            text-align: left;
+        }
+    }
+
+
+    .column {
+        text-align: center;
+        flex: 1 0;
+        padding: 0 @padding;
+    }
+
+    .graph {
+        z-index: 2;
+        flex: 0 0 auto !important;
+    }
+
+    svg {
+        margin: 0 1em;
+    }
+
+    .table {
+        width: 100%;
+        display: flex;
+        flex: 1 0;
+    }
+
+    .comments {
+        flex-basis: 70%;
+        p::before, p::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            background: inherit;
+        }
+        p::after {
+            z-index: 4;
+            opacity: 0;
+        }
+    }
+
+    .commit, .date, .author {
+        flex-basis: 10%;
+    }
+
+    .commit p {
+        padding-left: @padding-bigger;
+    }
+
+    .resize-handle {
+        position: absolute;
+        width: 10px;
+        top: 0;
+        bottom: 0;
+        right: -5px;
+        cursor: col-resize;
+    }
+
+    .added {
+        background: url(atom://git-log/resources/added.png);
+    }
+    
+    .deleted {
+        background: url(atom://git-log/resources/deleted.png);
+    }
+
+    .modified {
+        background: url(atom://git-log/resources/modified.png);
+    }
+}
