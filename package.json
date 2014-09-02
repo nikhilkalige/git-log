@@ -1,9 +1,9 @@
 {
   "name": "git-log",
   "main": "./lib/git-log.js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "This package graphs your git commits",
-  "repository": "https://github.com/atom/git-log",
+  "repository": "https://github.com/nikhilkalige/git-log",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
