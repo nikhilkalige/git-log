@@ -2,7 +2,7 @@
   "name": "git-log",
   "main": "./lib/git-log.js",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "This packages graphs your git commits",
   "repository": "https://github.com/atom/git-log",
   "license": "MIT",
   "engines": {
