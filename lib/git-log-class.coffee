@@ -6,12 +6,25 @@ class GitLogView extends View
     @content: ->
         @div class: 'git-log native-key-bindings', tabindex: -1, =>
             @subview 'main_panel', new MainPanelView
-            @subview 'info_panel', new InfoPanelView
+           # @subview 'info_panel', new InfoPanelView
 
     constructor: ->
         super
 
 
+class MainPanelView extends ScrollView
+    @content:->
+        @div class: 'main panels', =>
+            @table =>
+                @thead =>
+                    @tr =>
+                        @th 'Graph'
+                        @th 'Description'
+                        @th 'Commit'
+                        @th 'Date'
+                        @th 'Author'
+
+###
 class MainPanelView extends ScrollView
     @content:->
         @div class: 'main panels', =>
@@ -54,5 +67,5 @@ class ColumnView extends View
         @list.append $$ ->
             @p =>
                 @span content
-
+###
 
