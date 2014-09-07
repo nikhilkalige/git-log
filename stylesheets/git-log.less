@@ -12,7 +12,7 @@
     font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
     background-color: @syntax-background-color;
     color: @syntax-text-color;
-    //overflow-x: scroll;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 
@@ -34,7 +34,8 @@
         overflow: auto;
     }
 
-    .main {        
+    .main {
+        position: relative;    
         white-space: nowrap;
         //height: 70%;
 
@@ -149,8 +150,10 @@
     }
 
     .graph {
-        z-index: 2;
-        flex: 0 0 auto !important;
+        position: absolute;
+        z-index: 1;
+        //lex: 0 0 auto !important;
+        //padding: 0 @padding;
     }
 
     svg {
@@ -163,7 +166,7 @@
         flex: 1 0;
     }
 
-    .comments {
+    /*.comments {
         flex-basis: 70%;
         p::before, p::after {
             content: "";
@@ -186,7 +189,7 @@
     .commit p {
         padding-left: @padding-bigger;
     }
-
+*/
     .resize-handle {
         position: absolute;
         width: 10px;
@@ -206,5 +209,33 @@
 
     .modified {
         background: url(atom://git-log/resources/modified.png);
+    }
+}
+
+
+
+.git-log {
+
+    table,tbody,th,td,tr {
+        border:0px;
+        padding:1px;
+        margin:0px;
+    }
+
+    table, thead {
+        width: 100%;
+    }
+
+    thead p {
+        font-size: 1.2em;
+        
+    }
+
+    .comments {
+        flex-basis: 70%;
+    }
+
+    .commit, .date, .author {
+        flex-basis: 10%;
     }
 }

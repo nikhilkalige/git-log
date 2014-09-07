@@ -14,15 +14,23 @@ class GitLogView extends View
 
 class MainPanelView extends ScrollView
     @content:->
-        @div class: 'main panels', =>
+        @div class: 'main panels',cellpadding: 0, cellspacing: 0, border: 0, outlet: 'main_panel', =>
+            
             @table =>
+                @div class: 'graph', outlet: 'graph'
                 @thead =>
                     @tr =>
-                        @th 'Graph'
-                        @th 'Description'
-                        @th 'Commit'
-                        @th 'Date'
-                        @th 'Author'
+                        @th class: 'graph-col', =>
+                            @p 'Graph'
+                        @th class: 'comments', outlet: 'comments', =>
+                            @p 'Description'
+                        @th class: 'commit', outlet: 'commit', =>
+                            @p 'Commit'
+                        @th class: 'date', outlet: 'date',  =>
+                            @p 'Date'
+                        @th class: 'author', outlet: 'author',  =>
+                            @p 'Author'
+                @tbody outlet: 'body'
 
 ###
 class MainPanelView extends ScrollView
