@@ -4,7 +4,7 @@ module.exports =
 
 class GitLogView extends View
     @content: ->
-        @div class: 'git-log native-key-bindings', tabindex: -1, =>
+        @div class: 'git-log', tabindex: -1, =>
             @subview 'main_panel', new MainPanelView
             @subview 'info_panel', new InfoPanelView
 
@@ -30,6 +30,9 @@ class MainPanelView extends ScrollView
                         @th class: 'author', outlet: 'author',  =>
                             @p 'Author'
                 @tbody outlet: 'body'
+
+    initialize: ->
+        super
 
 
 class InfoPanelView extends ScrollView
