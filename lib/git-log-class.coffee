@@ -6,7 +6,7 @@ class GitLogView extends View
     @content: ->
         @div class: 'git-log native-key-bindings', tabindex: -1, =>
             @subview 'main_panel', new MainPanelView
-           # @subview 'info_panel', new InfoPanelView
+            @subview 'info_panel', new InfoPanelView
 
     constructor: ->
         super
@@ -15,7 +15,6 @@ class GitLogView extends View
 class MainPanelView extends ScrollView
     @content:->
         @div class: 'main panels',cellpadding: 0, cellspacing: 0, border: 0, outlet: 'main_panel', =>
-            
             @table =>
                 @div class: 'graph', outlet: 'graph'
                 @thead =>
@@ -31,6 +30,34 @@ class MainPanelView extends ScrollView
                         @th class: 'author', outlet: 'author',  =>
                             @p 'Author'
                 @tbody outlet: 'body'
+
+
+class InfoPanelView extends ScrollView
+    @content: ->
+        @div class: 'info panels', =>
+            @div class: 'info-data', outlet: 'info_data'
+            @div class: 'info-image', outlet: 'info_image'
+            @div class: 'info-file', outlet: 'info_file', =>
+                @table =>
+                    @thead =>
+                        @tr =>
+                            @th class: 'status', outlet:'status', =>
+                                @p 'Status'
+                            @th class: 'file', outlet: 'name', =>
+                                @p 'Filename'
+                            @th class: 'path', outlet: 'path', =>
+                                @p 'Path'
+                            @th class: 'add', outlet: 'addition',  =>
+                                @p 'Addition'
+                            @th class: 'del', outlet: 'deletion',  =>
+                                @p 'Deletion'
+                    @tbody outlet: 'body'
+
+    add_content: (head, content) ->
+        @info_data.append $$ ->
+            @h2 =>
+                @text head
+                @span content
 
 ###
 class MainPanelView extends ScrollView

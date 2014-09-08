@@ -76,7 +76,7 @@
         flex-direction: column;
         flex-shrink: 0;
         position: relative;
-        background-color: rgba(0,0,0,0.6);
+        //background-color: rgba(0,0,0,0.6);
 
         h2 {
             border: none;
@@ -100,18 +100,15 @@
             }
         }
         p {
-            padding-top: 1em;
-            margin-bottom: 0.5em;
-            background: none !important;
+            padding-top: 10px;
+            padding-top: 10px;
+            //margin-bottom: 0.5em;
+            //background: none !important;
             flex-shrink: 0;
         }
     }
 
-    .info-data {
-        border-top: solid 5px rgba(0,0,0,0.3);
-        position: relative;
-        flex-shrink: 0;
-    }
+    
 
     .info-image {
         position: absolute;
@@ -124,21 +121,6 @@
             &:first-child {
                 margin-right: 1px;
             }
-        }
-    }
-
-    .info-file {
-        display: flex;
-        flex-shrink: 0;
-        border-top: solid 1px;
-        margin-top: 1em;
-
-        .list-head {
-            border-bottom: solid 1px;
-            margin: 0 -@margin;
-        }
-        .column {
-            text-align: left;
         }
     }
 
@@ -215,7 +197,6 @@
 
 
 .git-log {
-
     table,tbody,th,td,tr {
         border:0px;
         padding:1px;
@@ -227,8 +208,27 @@
     }
 
     thead p {
-        font-size: 1.2em;
-        
+        font-size: 1.1em;
+        font-weight: normal;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        text-align: center;
+    }
+
+    .main {
+        tbody tr td:first-child {
+            & > p:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                right: 0;
+                left: 0;
+                z-index: 3;
+                opacity: 0;
+            }
+        }
     }
 
     .comments {
@@ -238,4 +238,53 @@
     .commit, .date, .author {
         flex-basis: 10%;
     }
+
+    .info {
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    .info-data {
+        //border-top: solid 5px rgba(0,0,0,0.3);
+        margin: 2px;
+        margin-bottom: 1px;
+        padding-bottom: 8px;
+        position: relative;
+        background-color: rgba(0,0,0,.3);
+        flex-shrink: 0;
+
+        p {
+            background: none;
+            padding-bottom: 1.3em;
+        }
+    }
+
+    .info-file {
+        display: flex;
+        flex-shrink: 0;
+        //border-top: solid 1px;
+        margin-top: 1px;
+        margin-bottom: 2px;
+
+        .list-head {
+            border-bottom: solid 1px;
+            margin: 0 -@margin;
+        }
+        .column {
+            text-align: left;
+        }
+        p {
+            background-color: rgba(0,0,0,0.3);
+        }
+
+        tbody tr {
+            &:last-child p {
+                padding-bottom: 4px;
+            }
+            td:nth-child(4), td:nth-child(5) {
+                text-align: center;
+            }
+        }
+    }
+
 }
