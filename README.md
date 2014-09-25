@@ -6,9 +6,9 @@ Git-log is a package for [Atom][atom] that creates a graph of your git commits a
 
 ## Usage
 
->- `Cmd-Shift-P` on MacOS
->- `Ctrl-Shift-P` on Windows + Linux
->- `Git Log: Show` on the atom command palette.
+Open the command palette with `Cmd-Shift-P` (MacOS) or `Ctrl-Shift-P` (Windows or Linux)
+
+>- `Git Log: Show`
 
 ## Installing
 
