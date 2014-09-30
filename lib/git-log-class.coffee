@@ -4,7 +4,7 @@ module.exports =
 
 class GitLogView extends View
     @content: ->
-        @div class: 'git-log native-key-bindings', tabindex: -1, =>
+        @div class: 'git-log', tabindex: -1, =>
             @subview 'main_panel', new MainPanelView
             @subview 'info_panel', new InfoPanelView
 
@@ -12,6 +12,57 @@ class GitLogView extends View
         super
 
 
+class MainPanelView extends ScrollView
+    @content:->
+        @div class: 'main panels',cellpadding: 0, cellspacing: 0, border: 0, outlet: 'main_panel', =>
+            @table =>
+                @div class: 'graph', outlet: 'graph'
+                @thead =>
+                    @tr =>
+                        @th class: 'graph-col', =>
+                            @p 'Graph'
+                        @th class: 'comments', outlet: 'comments', =>
+                            @p 'Description'
+                        @th class: 'commit', outlet: 'commit', =>
+                            @p 'Commit'
+                        @th class: 'date', outlet: 'date',  =>
+                            @p 'Date'
+                        @th class: 'author', outlet: 'author',  =>
+                            @p 'Author'
+                @tbody outlet: 'body'
+
+    initialize: ->
+        super
+
+
+class InfoPanelView extends ScrollView
+    @content: ->
+        @div class: 'info panels', =>
+            @div class: 'info-data', outlet: 'info_data'
+            @div class: 'info-image', outlet: 'info_image'
+            @div class: 'info-file', outlet: 'info_file', =>
+                @table =>
+                    @thead =>
+                        @tr =>
+                            @th class: 'status', outlet:'status', =>
+                                @p 'Status'
+                            @th class: 'file', outlet: 'name', =>
+                                @p 'Filename'
+                            @th class: 'path', outlet: 'path', =>
+                                @p 'Path'
+                            @th class: 'add', outlet: 'addition',  =>
+                                @p 'Addition'
+                            @th class: 'del', outlet: 'deletion',  =>
+                                @p 'Deletion'
+                    @tbody outlet: 'body'
+
+    add_content: (head, content) ->
+        @info_data.append $$ ->
+            @h2 =>
+                @text head
+                @span content
+
+###
 class MainPanelView extends ScrollView
     @content:->
         @div class: 'main panels', =>
@@ -54,5 +105,5 @@ class ColumnView extends View
         @list.append $$ ->
             @p =>
                 @span content
-
+###
 
