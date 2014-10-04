@@ -10,7 +10,7 @@
 .git-log {
     overflow: auto;
     font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
-    background-color: @syntax-background-color;
+    background-color: @syntax-gutter-background-color;
     color: @syntax-text-color;
     overflow: hidden;
     display: flex;
@@ -25,7 +25,7 @@
     p {
         margin: 0px;
         line-height: inherit;
-        padding: 0 @padding;    
+        padding: 0 @padding;
     }
 
     .panels {
@@ -35,7 +35,7 @@
     }
 
     .main {
-        position: relative;    
+        position: relative;
         white-space: nowrap;
         //height: 70%;
 
@@ -48,9 +48,10 @@
 
         p {
             position: relative;
+            background: @syntax-background-color;
 
             &:nth-child(odd) {
-                background: rgba(0,0,0,0.3);
+                //background: rgba(0,0,0,0.3);
             }
 
             &:nth-child(even) {
@@ -108,7 +109,7 @@
         }
     }
 
-    
+
 
     .info-image {
         position: absolute;
@@ -184,7 +185,7 @@
     .added {
         background: url(atom://git-log/resources/added.png);
     }
-    
+
     .deleted {
         background: url(atom://git-log/resources/deleted.png);
     }
@@ -250,7 +251,8 @@
         margin-bottom: 1px;
         padding-bottom: 8px;
         position: relative;
-        background-color: rgba(0,0,0,.3);
+        //background-color: rgba(0,0,0,.3);
+        background: @syntax-background-color;
         flex-shrink: 0;
 
         p {
@@ -274,7 +276,8 @@
             text-align: left;
         }
         p {
-            background-color: rgba(0,0,0,0.3);
+            //background-color: rgba(0,0,0,0.3);
+            background: @syntax-background-color;
         }
 
         tbody tr {
@@ -286,5 +289,9 @@
             }
         }
     }
-
+    .log-highlight p {
+        background-color:@syntax-selection-color;
+    }
 }
+
+
