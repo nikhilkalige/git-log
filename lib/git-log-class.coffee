@@ -30,6 +30,8 @@ class MainPanelView extends ScrollView
                         @th class: 'author', outlet: 'author',  =>
                             @p 'Author'
                 @tbody outlet: 'body'
+            @div class: 'button', =>
+                @a href: '', 'Load More'
 
     initialize: ->
         super

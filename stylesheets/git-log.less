@@ -25,17 +25,17 @@
     p {
         margin: 0px;
         line-height: inherit;
-        padding: 0 @padding;    
+        padding: 0 @padding;
     }
 
     .panels {
         display: -webkit-flex;
-        -webkit-flex-direction: row;
+        flex-direction: column;
         overflow: auto;
     }
 
     .main {
-        position: relative;    
+        position: relative;
         white-space: nowrap;
         //height: 70%;
 
@@ -108,7 +108,7 @@
         }
     }
 
-    
+
 
     .info-image {
         position: absolute;
@@ -148,6 +148,23 @@
         flex: 1 0;
     }
 
+    .button {
+        text-align: center;
+        position: relative;
+        a {
+            padding: 16px;
+            margin: 16px 16px;
+            border: 1px solid #FFF;
+            display: block;
+            transition: all 0.3s ease 0s;
+
+            &:hover {
+                background: none repeat scroll 0% 0% #FFF;
+                color: #0E83CD;
+            }
+        }
+    }
+
     /*.comments {
         flex-basis: 70%;
         p::before, p::after {
@@ -184,7 +201,7 @@
     .added {
         background: url(atom://git-log/resources/added.png);
     }
-    
+
     .deleted {
         background: url(atom://git-log/resources/deleted.png);
     }
