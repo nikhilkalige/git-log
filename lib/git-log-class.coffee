@@ -1,4 +1,4 @@
-{$$, ScrollView, View} = require 'atom'
+{$$, ScrollView, View} = require 'atom-space-pen-views'
 
 module.exports =
 
