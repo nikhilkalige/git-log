@@ -9,7 +9,7 @@
 
 .git-log {
     overflow: auto;
-    background-color: @syntax-background-color;
+    background-color: @syntax-gutter-background-color;
     color: @syntax-text-color;
     overflow: hidden;
     display: flex;
@@ -48,9 +48,10 @@
             position: relative;
             overflow: hidden;
             text-overflow: ellipsis;
+            background: @syntax-background-color;
 
             &:nth-child(odd) {
-                background: rgba(0,0,0,0.3);
+                //background: rgba(0,0,0,0.3);
             }
 
             &:nth-child(even) {
@@ -259,7 +260,8 @@
         margin-bottom: 1px;
         padding-bottom: 8px;
         position: relative;
-        background-color: rgba(0,0,0,.3);
+        //background-color: rgba(0,0,0,.3);
+        background: @syntax-background-color;
         flex-shrink: 0;
 
         p {
@@ -283,7 +285,8 @@
             text-align: left;
         }
         p {
-            background-color: rgba(0,0,0,0.3);
+            //background-color: rgba(0,0,0,0.3);
+            background: @syntax-background-color;
         }
 
         tbody tr {
@@ -295,5 +298,7 @@
             }
         }
     }
-
+    .log-highlight p {
+        background-color:@syntax-selection-color;
+    }
 }

@@ -44,7 +44,7 @@ class InfoPanelView extends ScrollView
                 @table =>
                     @thead =>
                         @tr =>
-                            @th class: 'status', outlet:'status', =>
+                            @th class: 'stat', outlet:'status', =>
                                 @p 'Status'
                             @th class: 'file', outlet: 'name', =>
                                 @p 'Filename'
