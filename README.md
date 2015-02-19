@@ -4,6 +4,12 @@ Git-log is a package for [Atom][atom] that creates a graph of your git commits a
 
 ![](https://raw.githubusercontent.com/NikhilKalige/git-log/master/resources/git-log.gif)
 
+## Usage
+
+Open the command palette with `Cmd-Shift-P` (MacOS) or `Ctrl-Shift-P` (Windows or Linux)
+
+>- `Git Log: Show`
+
 ## Installing
 
 Use the Atom package manager, which can be found in the Settings view or
