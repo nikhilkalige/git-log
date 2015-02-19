@@ -9,10 +9,9 @@
 
 .git-log {
     overflow: auto;
-    font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
-    background-color: @syntax-background-color;
+    background-color: @syntax-gutter-background-color;
     color: @syntax-text-color;
-    //overflow-x: scroll;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 
@@ -25,7 +24,7 @@
     p {
         margin: 0px;
         line-height: inherit;
-        padding: 0 @padding;    
+        padding: 0 @padding;
     }
 
     .panels {
@@ -34,9 +33,9 @@
         overflow: auto;
     }
 
-    .main {        
+    .main {
+        position: relative;
         white-space: nowrap;
-        //height: 70%;
 
         h2 {
             border-bottom: rgba(255,255,255,.5)1px solid;
@@ -47,9 +46,12 @@
 
         p {
             position: relative;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            background: @syntax-background-color;
 
             &:nth-child(odd) {
-                background: rgba(0,0,0,0.3);
+                //background: rgba(0,0,0,0.3);
             }
 
             &:nth-child(even) {
@@ -75,7 +77,7 @@
         flex-direction: column;
         flex-shrink: 0;
         position: relative;
-        background-color: rgba(0,0,0,0.6);
+        //background-color: rgba(0,0,0,0.6);
 
         h2 {
             border: none;
@@ -99,18 +101,15 @@
             }
         }
         p {
-            padding-top: 1em;
-            margin-bottom: 0.5em;
-            background: none !important;
+            padding-top: 10px;
+            padding-top: 10px;
+            //margin-bottom: 0.5em;
+            //background: none !important;
             flex-shrink: 0;
         }
     }
 
-    .info-data {
-        border-top: solid 5px rgba(0,0,0,0.3);
-        position: relative;
-        flex-shrink: 0;
-    }
+
 
     .info-image {
         position: absolute;
@@ -126,21 +125,6 @@
         }
     }
 
-    .info-file {
-        display: flex;
-        flex-shrink: 0;
-        border-top: solid 1px;
-        margin-top: 1em;
-
-        .list-head {
-            border-bottom: solid 1px;
-            margin: 0 -@margin;
-        }
-        .column {
-            text-align: left;
-        }
-    }
-
 
     .column {
         text-align: center;
@@ -149,8 +133,10 @@
     }
 
     .graph {
-        z-index: 2;
-        flex: 0 0 auto !important;
+        position: absolute;
+        z-index: 1;
+        //lex: 0 0 auto !important;
+        //padding: 0 @padding;
     }
 
     svg {
@@ -163,7 +149,7 @@
         flex: 1 0;
     }
 
-    .comments {
+    /*.comments {
         flex-basis: 70%;
         p::before, p::after {
             content: "";
@@ -186,7 +172,7 @@
     .commit p {
         padding-left: @padding-bigger;
     }
-
+*/
     .resize-handle {
         position: absolute;
         width: 10px;
@@ -199,12 +185,120 @@
     .added {
         background: url(atom://git-log/resources/added.png);
     }
-    
+
     .deleted {
         background: url(atom://git-log/resources/deleted.png);
     }
 
     .modified {
         background: url(atom://git-log/resources/modified.png);
+    }
+}
+
+
+
+.git-log {
+    table {
+        table-layout: fixed;
+    }
+
+    table,tbody,th,td,tr {
+        border:0px;
+        padding:1px;
+        margin:0px;
+    }
+
+    td {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    table, thead {
+        width: 100%;
+    }
+
+    thead p {
+        font-size: 1.1em;
+        font-weight: normal;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        text-align: center;
+    }
+
+    .main {
+        tbody tr td:first-child {
+            & > p:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                right: 0;
+                left: 0;
+                z-index: 3;
+                opacity: 0;
+            }
+        }
+    }
+
+    .comments {
+        flex-basis: 70%;
+    }
+
+    .commit, .date, .author {
+        flex-basis: 10%;
+    }
+
+    .info {
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    .info-data {
+        //border-top: solid 5px rgba(0,0,0,0.3);
+        margin: 2px;
+        margin-bottom: 1px;
+        padding-bottom: 8px;
+        position: relative;
+        //background-color: rgba(0,0,0,.3);
+        background: @syntax-background-color;
+        flex-shrink: 0;
+
+        p {
+            background: none;
+            padding-bottom: 1.3em;
+        }
+    }
+
+    .info-file {
+        display: flex;
+        flex-shrink: 0;
+        //border-top: solid 1px;
+        margin-top: 1px;
+        margin-bottom: 2px;
+
+        .list-head {
+            border-bottom: solid 1px;
+            margin: 0 -@margin;
+        }
+        .column {
+            text-align: left;
+        }
+        p {
+            //background-color: rgba(0,0,0,0.3);
+            background: @syntax-background-color;
+        }
+
+        tbody tr {
+            &:last-child p {
+                padding-bottom: 4px;
+            }
+            td:nth-child(4), td:nth-child(5) {
+                text-align: center;
+            }
+        }
+    }
+    .log-highlight p {
+        background-color:@syntax-selection-color;
     }
 }
