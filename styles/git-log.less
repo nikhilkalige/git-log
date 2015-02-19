@@ -34,7 +34,7 @@
     }
 
     .main {
-        position: relative;    
+        position: relative;
         white-space: nowrap;
 
         h2 {
@@ -46,6 +46,8 @@
 
         p {
             position: relative;
+            overflow: hidden;
+            text-overflow: ellipsis;
 
             &:nth-child(odd) {
                 background: rgba(0,0,0,0.3);
@@ -195,10 +197,19 @@
 
 
 .git-log {
+    table {
+        table-layout: fixed;
+    }
+
     table,tbody,th,td,tr {
         border:0px;
         padding:1px;
         margin:0px;
+    }
+
+    td {
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     table, thead {
