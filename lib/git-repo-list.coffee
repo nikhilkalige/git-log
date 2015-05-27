@@ -25,7 +25,10 @@ class RepoListView extends SelectListView
 
     confirmed: (item) ->
         @cancel()
+        options= {
+            'repo': item
+        };
         uri = "git-log://" + item.repo_name
         old_pane = atom.workspace.paneForURI(uri)
         old_pane.destroyItem old_pane.itemForURI(uri)  if old_pane
-        atom.workspace.open uri
+        atom.workspace.open uri, options
