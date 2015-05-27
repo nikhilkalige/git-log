@@ -106,4 +106,3 @@ class ColumnView extends View
             @p =>
                 @span content
 ###
-
